@@ -14,6 +14,7 @@
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body>
+
   <header class="header">
     <div class="header__container">
       <div class="header__top">
@@ -42,24 +43,47 @@
             </ul>
           </nav>
           <div class="header__contacts">
-            <a href="" class="contacts__link contacts__link--icon">Telegram</a>
+            <button href="" class="contacts__link contacts__link--icon btn-reset" id="box-on">Telegram</button>
             <a href="tel:+380980506804" class="contacts__phone">+38 (098) 050-68-04</a>
           </div>
-        </div>
-      </div>
-      <div class="header__bottom">
-        <div class="header__top-container">
-          <ul class="header__bottom-list">
-            <li class="bottom__list-item"><a href="" class="list-item__link">Разработка сайтов</a></li>
-            <li class="bottom__list-item"><a href="" class="list-item__link">Продвижение проектов</a></li>
-            <li class="bottom__list-item"><a href="" class="list-item__link">Адаптивный веб-дизайн</a></li>
-            <li class="bottom__list-item"><a href="" class="list-item__link">Сопровождение и развитие</a></li>
-          </ul>
-          <button class="header__bottom-btn">Заказать сайт</button>
+          <div class="header-contacts__box" id="contact-box">
+            <div class="header__contacts-border">
+              <div class="header__contacts">
+                <a href="" class="contacts__link contacts__link--icon">Telegram</a>
+                <a href="tel:+380980506804" class="contacts__phone">+38 (098) 050-68-04</a>
+              </div>
+            </div>
+            <div class="header__contacts-border">
+              <div class="header__contacts">
+                <a href="" class="contacts__link contacts__link--icon">Telegram</a>
+                <a href="tel:+380980506804" class="contacts__phone">+38 (098) 050-68-04</a>
+              </div>
+            </div>
+            <div class="header__contacts-border">
+              <div class="header__contacts">
+                <a href="" class="contacts__link contacts__link--icon">Telegram</a>
+                <a href="tel:+380980506804" class="contacts__phone">+38 (098) 050-68-04</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </header>
+  
+  <aside class="aside-top__fixed">
+    <div class="header__bottom">
+      <div class="header__top-container">
+        <ul class="header__bottom-list">
+          <li class="bottom__list-item"><a href="" class="list-item__link">Разработка сайтов</a></li>
+          <li class="bottom__list-item"><a href="" class="list-item__link">Продвижение проектов</a></li>
+          <li class="bottom__list-item"><a href="" class="list-item__link">Адаптивный веб-дизайн</a></li>
+          <li class="bottom__list-item"><a href="" class="list-item__link">Сопровождение и развитие</a></li>
+        </ul>
+        <button class="header__bottom-btn">Заказать сайт</button>
+      </div>
+    </div>
+  </aside>
 
   <main>
     <section class="hero">
@@ -74,8 +98,8 @@
                 <h2 class="hero-content__title">Разрабатываем корпоративные сайты под ключ</h2>
                 <p class="hero-content__text">Решаем проблемы вашего бизнеса, применяем современные маркетинговые технологии</p>
                 <div class="hero__btns">
-                  <button class="btn hero-content__btn-left">Оставить заявку</button>
-                  <button class="btn hero-content__btn-right">Узнать подробнее</button>
+                  <a href="" class="btn hero-content__btn-left">Оставить заявку</a>
+                  <a href="" class="btn hero-content__btn-right">Узнать подробнее</a>
                 </div>
               </div>
             </div>
@@ -84,8 +108,8 @@
                 <h2 class="hero-content__title">Диджитализируем компанию</h2>
                 <p class="hero-content__text">Выводим в онлайн, помогаем увеличить клиентопоток и автоматизировать бизнес-процессы</p>
                 <div class="hero__btns">
-                  <button class="btn hero-content__btn-left">Оставить заявку</button>
-                  <button class="btn hero-content__btn-right color-midnight-blue">Узнать подробнее</button>
+                  <a href="" class="btn hero-content-btn-left__hov">Оставить заявку</a>
+                  <a href="" class="btn hero-content__btn-right color-midnight-blue">Узнать подробнее</a>
                 </div>
               </div>
             </div>
@@ -94,8 +118,8 @@
                 <h2 class="hero-content__title">Создаем эффективную стратегию</h2>
                 <p class="hero-content__text">Внедряем механизмы, которые поднимают объем продаж и приносят прибыль</p>
                 <div class="hero__btns">
-                  <button class="btn hero-content__btn-left">Оставить заявку</button>
-                  <button class="btn hero-content__btn-right">Узнать подробнее</button>
+                  <a href="" class="btn hero-content__btn-left">Оставить заявку</a>
+                  <a href="" class="btn hero-content__btn-right">Узнать подробнее</a>
                 </div>
               </div>
             </div>
@@ -111,22 +135,22 @@
         <h2 class="title">Кейсы</h2>
         <p class="cases__text">Предлагаем вам ознакомиться с реализованными проектами, чтобы убедиться в компетентности и профессионализме специалистов.</p>
         <div class="cases__inner">
-          <div class="cases__cards" style="background-image: url('./img/case-card-1.svg');">
+          <div class="cases__cards element-animation" style="background-image: url('./img/case-card-1.svg');">
             <h3 class="cards__title">Frootiz</h3>
             <p class="cards__text">Интернет-магазин</p>
             <a href="" class="cards__btn"><img class="cards__icon" src="img/oko.svg"><span class="card__btn-text">Смотреть проект</span></a>
           </div>
-          <div class="cases__cards" style="background-image: url('./img/case-card-2.svg');">
+          <div class="cases__cards element-animation" style="background-image: url('./img/case-card-2.svg');">
             <h3 class="cards__title">Моя Картина</h3>
             <p class="cards__text">Landing Page</p>
             <a href="" class="cards__btn"><img class="cards__icon" src="img/oko.svg"><span class="card__btn-text">Смотреть проект</span></a>
           </div>
-          <div class="cases__cards" style="background-image: url('./img/case-card-3.svg');">
+          <div class="cases__cards element-animation" style="background-image: url('./img/case-card-3.svg');">
             <h3 class="cards__title">Intell Avto</h3>
             <p class="cards__text">Корпоративный сайт</p>
             <a href="" class="cards__btn"><img class="cards__icon" src="img/oko.svg"><span class="card__btn-text">Смотреть проект</span></a>
           </div>
-          <div class="cases__cards" style="background-image: url('./img/case-card-4.svg');">
+          <div class="cases__cards element-animation" style="background-image: url('./img/case-card-4.svg');">
             <h3 class="cards__title">IF Billion</h3>
             <p class="cards__text">Корпоративный сайт</p>
             <a href="" class="cards__btn"><img class="cards__icon" src="img/oko.svg"><span class="card__btn-text">Смотреть проект</span></a>
@@ -150,7 +174,7 @@
         <h2 class="title">Наши услуги</h2>
         <p class="services__text">Для клиентов ITost мы реализуем уникальный дизайн и функционал сайта, который отвечает запросам целевой аудитории. Мы поддерживаем интернет-проект на старте, чтобы он занял лидирующие позиции на рынке.</p>
         <div class="services__inner">
-          <div class="services__card" style="background-image: url('./img/uslugi-icon-1.svg');">
+          <div class="services__card element-animation" style="background-image: url('./img/uslugi-icon-1.svg');">
             <h3 class="services-card__title">Разработка сайтов</h3>
             <p class="services-card__text">Прототипируем, реализуем и запускаем сайт с авторским дизайном под ключ. Гарантируем скорость выполнения без потери качества.</p>
             <a href="" class="services-card__link">
@@ -161,7 +185,7 @@
               </span>
             </a>
           </div>
-          <div class="services__card" style="background-image: url('./img/uslugi-icon-2.svg');">
+          <div class="services__card element-animation" style="background-image: url('./img/uslugi-icon-2.svg');">
             <h3 class="services-card__title">Продвижение проектов</h3>
             <p class="services-card__text">Продвигаем ресурс с помощью социальных сетей и поисковых систем, обеспечиваем приток клиентов, которым нужен ваш продукт здесь и сейчас.</p>
             <a href="" class="services-card__link">
@@ -172,7 +196,7 @@
               </span>
             </a>
           </div>
-          <div class="services__card" style="background-image: url('./img/uslugi-icon-3.svg');">
+          <div class="services__card element-animation" style="background-image: url('./img/uslugi-icon-3.svg');">
             <h3 class="services-card__title">Адаптивный веб-дизайн</h3>
             <p class="services-card__text">Разработка и верстка дизайна любого уровня сложности. Нестандартные решения для всех ниш, которые присутствуют на рынке.</p>
             <a href="" class="services-card__link">
@@ -183,7 +207,7 @@
               </span>
             </a>
           </div>
-          <div class="services__card" style="background-image: url('./img/uslugi-icon-4.svg');">
+          <div class="services__card element-animation" style="background-image: url('./img/uslugi-icon-4.svg');">
             <h3 class="services-card__title">Сопровождение и развитие</h3>
             <p class="services-card__text">Поддерживаем сайт после запуска, помогаем обогнать ваших главных конкурентов и получить высокую конверсию.</p>
             <a href="" class="services-card__link">
@@ -201,7 +225,7 @@
     <section class="contacts">
       <div class="container">
         <div class="contacts__inner">
-          <div class="contacts__card">
+          <div class="contacts__card element-animation">
             <h3 class="contacts-card__title">Давайте развивать бизнес вместе.</h3>
             <span class="contacts-card__subtitle">Есть решение для вашего проекта.</span>
             <p class="contacts-card__text">Заполните форму или свяжитесь с нами в соц. сетях или мессенджерах.​ Менеджеры проконсультируют вас по любому вопросу.</p>
@@ -224,7 +248,7 @@
               <span class="card-link__text">work@itost.online</span>
             </a>
           </div>
-          <div class="contacts-card__form">
+          <div class="contacts-card__form element-animation">
             <h2 class="card__form__title">Оставить заявку</h2>
             <form class="card__form" action="тут будет ссылка" autocomplete method="POST">
               <input class="form__input" type="text" placeholder="Ваше имя" name="name">
@@ -334,6 +358,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <script src="js/app.js"></script>
 </body>
