@@ -11,9 +11,7 @@
   }
 
   .header__logo {
-    margin: 0;
-    margin-right: 66px;
-    margin-left: 12px;
+    margin: 0 66px 0 12px;
     width: 93px;
     height: 22px;
   }
@@ -34,7 +32,7 @@
     list-style-type: none;
   }
 
-  .social__link { 
+  .social__link {
     width: 28px;
     height: 28px;
     background-size: 28px 28px;
@@ -95,16 +93,14 @@
   }
 
   .hero-content__title {
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     font-weight: 500;
     font-size: 26px;
     line-height: 32px;
   }
 
   .hero-content__text {
-    margin: 0;
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
     width: 318px;
     font-weight: 300;
     font-size: 16px;
@@ -118,17 +114,15 @@
   }
 
   .hero-content__btn-left {
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
     padding: 13px 45px 12px 45px;
   }
 
   .hero-content-btn-left__hov {
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
     padding: 13px 45px 12px 45px;
   }
-  
+
   .hero-content__btn-right {
     margin-left: 10px;
   }
@@ -163,16 +157,14 @@
   }
 
   .title {
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     font-weight: 300;
     font-size: 30px;
     line-height: 37px;
   }
 
   .cases__text {
-    margin: 0;
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
     width: 343px;
     font-weight: 300;
     font-size: 12px;
@@ -219,8 +211,7 @@
   }
 
   .cases__cards:nth-child(4) {
-    margin: 0;
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
   }
 
   .cards__link-box {
@@ -240,9 +231,7 @@
   }
 
   .services__text {
-    margin: 0;
-    margin-right: 20px;
-    margin-bottom: 25px;
+    margin: 0 20px 25px 0;
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -309,19 +298,15 @@
   }
 
   .contacts-card__title {
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
   }
 
   .contacts-card__subtitle {
-    margin: 0;
-    margin-bottom: 15px;
-
+    margin: 0 0 15px 0;
   }
 
   .contacts-card__text {
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
     font-weight: 300;
     font-size: 12px;
     line-height: 20px;
@@ -349,9 +334,7 @@
 
 
   .card__form__title {
-    margin: 0;
-    margin-left: 50px;
-    margin-bottom: 21px;
+    margin: 0 0 21px 50px;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -412,8 +395,7 @@
   }
 
   .footer__logo {
-    margin: 0;
-    margin-bottom: 17px;
+    margin: 0 0 17px 0;
   }
 
   .footer-top__text {
@@ -484,8 +466,7 @@
 
 
   .copyright__item {
-    margin: 0;
-    margin-bottom: 6px;
+    margin: 0 0 6px 0;
   }
 
 }

@@ -90,6 +90,7 @@ a {
 }
 
 .header__top-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,8 +107,11 @@ a {
   display: none;
 }
 
-.header__nav {
-  margin-right: 319px;
+.link__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .header__list {
@@ -243,7 +247,7 @@ a {
 .header-contacts__box {
   position: absolute;
   top: -300px;
-  right: 316px;
+  right: -15px;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -251,13 +255,13 @@ a {
   height: 265px;
   background-color: var(--color-white);
   border-radius: 0 0 5px 5px;
-  box-shadow: 0px 5px 30px rgba(190, 0, 27, 0.2);
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   z-index: 100;
 }
 
 .header-contacts__box-is-active {
-  top: 0;
+  top: -18px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -284,6 +288,7 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 70px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header__bottom-list {
@@ -314,15 +319,23 @@ a {
 }
 
 .header__bottom-btn {
-  padding: 10px 42px;
+  padding: 9px 41px;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 40px;
   color: var(--color-white);
   background-color: var(--color-torch-red);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__bottom-btn:hover {
+  color: var(--color-torch-red);
+  background-color: var(--color-white);
+  border-color: var(--color-torch-red);
+  transition: all 0.3s ease-in-out;
 }
 
 /* section hero */ 
@@ -885,7 +898,7 @@ a {
 }
 
 .contacts-card__form {
-  padding: 25px 75px 21px 75px;
+  padding: 25px 75px 0 75px;
   width: 500px;
   border-radius: 5px;
   background-image: url(../img/form-bg.jpg);
