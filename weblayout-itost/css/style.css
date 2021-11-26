@@ -63,7 +63,6 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0px 106px;
   max-width: 1280px;
 }
 
@@ -96,7 +95,7 @@ a {
   align-items: center;
   margin: 0 auto;
   padding: 0 5px;
-  width: 1280px;
+  width: 1270px;
 }
 
 .burger__btn {
@@ -247,7 +246,7 @@ a {
 .header-contacts__box {
   position: absolute;
   top: -300px;
-  right: -15px;
+  right: 0;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -453,7 +452,7 @@ a {
 /* swiper */
 
 .swiper {
-  width: 1280px;
+  max-width: 1280px;
   height: 400px;
 }
 
@@ -507,8 +506,7 @@ a {
 }
 
 .cases__container {
-  padding: 0px 106px;
-  width: 1280px;
+  max-width: 1050px;
 }
 
 .cases__text {
@@ -527,7 +525,6 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0 9px;
 }
 
 .cases__cards {
@@ -677,12 +674,15 @@ a {
   margin-bottom: 30px;
 }
 
+.services__container {
+  max-width: 1050px;
+}
+
 .services__inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 10px;
 }
 
 .services__card {
@@ -779,11 +779,14 @@ a {
   border-bottom: 1px solid var(--color-catskill-white);
 }
 
+.contacts__container {
+  max-width: 1050px;
+}
+
 .contacts__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 9px;
 }
 
 .contacts__card {
@@ -1017,9 +1020,10 @@ a {
 }
 
 .footer__top {
-  margin-bottom: 10px;
-  padding: 50px 0;
+  margin: 0 auto 10px auto;
+  padding: 50px 5px;
   border-bottom: 1px solid var(--color-catskill-white);
+  max-width: 1270px;
 }
 
 .footer-top__item:nth-child(1) {
