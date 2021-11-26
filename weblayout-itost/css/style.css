@@ -98,6 +98,18 @@ a {
   width: 1280px;
 }
 
+.burger__btn {
+  display: none;
+}
+
+.header-social__list {
+  display: none;
+}
+
+.header__nav {
+  margin-right: 319px;
+}
+
 .header__list {
   display: flex;
   align-items: center;
@@ -126,19 +138,21 @@ a {
   transition: color 0.3s ease-in-out;
 }
 
-.list__item:first-child {
+
+
+/* .list__item:first-child {
   margin-right: 40px;
+} */
+
+.list__item:nth-child(2) > .header__link {
+  margin-right: 30px;
 }
 
 .list__item:nth-child(3) > .header__link {
   margin-right: 30px;
 }
 
-.list__item:nth-child(4) > .header__link {
-  margin-right: 30px;
-}
-
-.list__item:nth-child(6) > .header__link {
+.list__item:nth-child(5) > .header__link {
   margin-right: 30px;
 }
 
@@ -168,7 +182,7 @@ a {
 
 .header__logo {
   width: 123px;
-  margin-left: 3px;
+  margin-right: 50px;
   height: 29px;
 }
 
@@ -894,6 +908,10 @@ a {
 .card__form__title::before {
   content: '';
   position: absolute;
+  top: -2px;
+  left: -55px;
+  width: 40px;
+  height: 40px;
   background-image: url(../img/form-icon.svg);
   background-repeat: no-repeat;
   background-size: 40px 40px;
