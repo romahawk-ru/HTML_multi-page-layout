@@ -29,7 +29,19 @@ const swiper = new Swiper('.swiper', {
 
 });
 
+
 //burger menu
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('#burger').addEventListener('click', function () {
+    document.querySelector('#menu').classList.add('is-active');
+  });
+  document.querySelector('#burger-close').addEventListener('click', function () {
+    document.querySelector('#menu').classList.remove('is-active');
+  });
+});
+
+
+//dвыпадающие контакты
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#box-on').addEventListener('click', function () {
     document.querySelector('#contact-box').classList.add('header-contacts__box-is-active');
@@ -57,3 +69,32 @@ for (let elm of elements) {
 
 //плавное появление hero__container
 $('.hero__container').delay(1000).animate({'opacity':'1'},500);
+
+
+//эффекты при скроле 
+
+var StickyElement = function(node){
+  var doc = $(document), 
+  fixed = false,
+  anchor = node.find('.sticky-anchor'),
+  content = node.find('.sticky-content'); 
+  var onScroll = function(e){
+      var docTop = doc.scrollTop(),
+      anchorTop = anchor.offset().top;
+      if(docTop > anchorTop){
+          if(!fixed){
+              anchor.height(content.outerHeight());
+              content.addClass('fixed');        
+              fixed = true;
+          }
+          } else {
+          if(fixed){
+              anchor.height(0);
+              content.removeClass('fixed'); 
+              fixed = false;
+          }
+      }
+  };
+  $(window).on('scroll', onScroll);
+};
+var sticky = new StickyElement($('.sticky-element'));
