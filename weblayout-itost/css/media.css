@@ -271,9 +271,13 @@
   }
 
   .header__logo {
-    margin: 0 66px 0 12px;
+    margin: 0;
     width: 93px;
     height: 22px;
+  }
+
+  .burger__btn {
+    margin-left: 20px;
   }
  
 
@@ -289,7 +293,7 @@
   }
 
   .hero-content {
-    padding: 25px 37px 25px 20px;
+    padding: 25px 44px 25px 20px;
   }
 
   .hero-content__title {
@@ -350,83 +354,104 @@
     width: 80%;
   }
 
-    /* section cases */
+  .swiper-horizontal >.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 25px;
+  }
 
-    .cases {
-      margin-bottom: 25px;
-    }
-  
-    .title {
-      margin: 0 0 20px 0;
-      font-weight: 300;
-      font-size: 30px;
-      line-height: 37px;
-    }
-  
-    .cases__text {
-      margin: 0 0 25px 0;
-      width: 343px;
-      font-weight: 300;
-      font-size: 12px;
-      line-height: 18px;
-    }
-  
-    .cases__inner {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 0 9px;
-    }
-  
-    .cases__cards {
-      margin-bottom: 25px;
-      padding: 20px 20px 17px 20px;
-      min-width: 300px;
-      min-height: 162px;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-    }
-  
-    .cards__btn {
-      width: 33px;
-      height: 33px;
-    }
-  
-    .card__btn-text {
-      left: 39px;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 14px;
-    }
-  
-    .cards__btn:hover {
-      width: 163px;
-      height: 33px;
-    }
-    .cards__icon {
-      padding: 8px;
-      width: 33px;
-      height: 33px;
-    }
-  
-    .cases__cards:nth-child(4) {
-      margin: 0 0 25px 0;
-    }
-  
-    .cards__link-box {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .cards__link {
-      margin-bottom: 25px;
-    }
+  /* section cases */
 
-    /* section services */
+  .cases {
+    margin-bottom: 25px;
+  }
+
+  .title {
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .cases__text {
+    margin: 0 0 25px 0;
+    width: 343px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .cases__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 9px;
+  }
+
+  .cases__cards {
+    margin-bottom: 25px;
+    padding: 20px 20px 17px 20px;
+    min-width: 300px;
+    min-height: 162px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .cards__title {
+    margin: 0;
+    font-size: 22px;
+  }
+
+  .cards__text {
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+
+  .cards__btn {
+    width: 33px;
+    height: 33px;
+  }
+
+  .card__btn-text {
+    left: 39px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .cards__btn:hover {
+    width: 163px;
+    height: 33px;
+  }
+  .cards__icon {
+    padding: 8px;
+    width: 33px;
+    height: 33px;
+  }
+
+  .cases__cards:nth-child(3) {
+    margin-bottom: 25px;
+  }
+
+  .cases__cards:nth-child(4) {
+    margin: 0 0 25px 0;
+  }
+
+  .cards__link-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cards__link {
+    margin-bottom: 25px;
+  }
+
+  /* section services */
 
   .services {
     margin-bottom: 20px;
@@ -514,6 +539,7 @@
 
   .contacts-card__btns {
     flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-bottom: 8px;
   }
 
@@ -588,7 +614,7 @@
   }
 
   .footer-top__inner {
-    padding: 0;
+    justify-content: space-evenly;
   }
 
   .footer__logo {
@@ -620,11 +646,13 @@
   }
 
   .footer-top__item:nth-child(2) {
+    padding: 0;
     max-width: 100%;
   }
 
   .footer-top__item:nth-child(3) {
-    width: 100%;
+    padding: 0;
+    max-width: 60%;
   }
 
   .footer-top__item:nth-child(4) {
@@ -672,9 +700,9 @@
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
 
-  
+
 
 }
 
