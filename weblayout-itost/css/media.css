@@ -1,12 +1,32 @@
-@media (max-width: 1111px) {
+@media (max-width: 1132px) {
   
+  .burger-btn__close {
+    position: relative;
+    margin-left: 77px;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
   .bottom__list-item {
     margin-right: 10px;
   }
+
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1080px) {
   
+  .header__top {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: var(--color-white);
+  } 
+
+
   .header__bottom {
     display: none;
   }
@@ -44,6 +64,19 @@
     cursor: pointer;
   }
 
+  .is-active {
+    top: 44px;
+  }
+
+  .is-not-active {
+    display: none;
+    transition: all ease-in-out 1s;
+  }
+
+  .active {
+    display: block;
+  }
+
   .burger__line {
 		position: absolute;
 		display: inline-block;
@@ -70,6 +103,10 @@
 
   /* seceion hero */
     
+  .hero {
+    margin-top: 80px;
+  }
+
   .swiper-slide {
     border-radius: 0;
   }
@@ -101,7 +138,7 @@
   }
 
   .cards__link {
-    padding: 0;
+    padding: 0 5px 0 0;
   }
 
   /* section cases */
@@ -123,7 +160,7 @@
     margin-bottom: 40px;
   }
 
-  /* ection contacts */
+  /* section contacts */
 
   .contacts {
     padding-bottom: 50px;
@@ -141,6 +178,9 @@
     padding: 35px 23px 30px 23px;
     width: 100%;
     height: 100%;
+    opacity: 1;
+    transform: translateY(0%);
+    
   }
 
   .contacts-card__link {
@@ -156,6 +196,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 110%;
+    opacity: 1;
+    transform: translateY(0%);
   }
 
   .form__text {
@@ -254,7 +296,6 @@
     margin-bottom: 7px;
   }
 
-
 }
 
 
@@ -278,11 +319,18 @@
   .burger__btn {
     margin-left: 20px;
   }
+
+  .burger-btn__close {
+    margin-left: 27px;
+  }
+
+
  
 
   /* section hero */
 
   .hero {
+    margin-top: 60px;
     margin-bottom: 25px;
   }
 
@@ -442,7 +490,7 @@
   .cards__link-box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .cards__link {
@@ -604,7 +652,7 @@
   /* footer */
 
   .footer__container {
-    padding: 20px 0;
+    padding: 20px 0 0 0;
   }
 
   .footer__top {
@@ -683,6 +731,7 @@
 
   .copyright__list {
     flex-direction: column;
+    margin: 0;
   }
 
   .copyright__item:not(:last-child) {

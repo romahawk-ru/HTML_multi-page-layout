@@ -34,22 +34,61 @@ const swiper = new Swiper('.swiper', {
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#burger').addEventListener('click', function () {
     document.querySelector('#menu').classList.add('is-active');
+    document.querySelector('#burger').classList.add('is-not-active');
+    document.querySelector('#burger-close').classList.add('active');
+    document.querySelector('body').classList.add('overflow-hidden');
+
   });
   document.querySelector('#burger-close').addEventListener('click', function () {
     document.querySelector('#menu').classList.remove('is-active');
+    document.querySelector('#burger').classList.remove('is-not-active');
+    document.querySelector('#burger-close').classList.remove('active');
+    document.querySelector('body').classList.remove('overflow-hidden');
   });
 });
 
 
-//dвыпадающие контакты
-window.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('#box-on').addEventListener('click', function () {
-    document.querySelector('#contact-box').classList.add('header-contacts__box-is-active');
-  });
-  document.querySelector('#contact-box').addEventListener('click', function () {
-    document.querySelector('#contact-box').classList.remove('header-contacts__box-is-active');
-  });
-});
+
+//выпадающий список телеграмм
+// window.addEventListener('DOMContentLoaded', function() {
+//   document.querySelector('#box-on').addEventListener('click', function () {
+//     document.querySelector('#contact-box').classList.add('header-contacts__box-is-active');
+//   });
+//   document.querySelector('#contact-box').addEventListener('click', function () {
+//     document.querySelector('#contact-box').classList.remove('header-contacts__box-is-active');
+//   });
+// });
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("contact-box").classList.toggle("header-contacts__box-is-active");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+
+  var dropdowns = document.getElementsByClassName("header-contacts__box");
+  var i;
+  for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('header-contacts__box-is-active')) {
+      openDropdown.classList.remove('header-contacts__box-is-active');
+    }
+  }
+}
+};
+
+
+
+
+
+
+
+
+
 
 // появление элементов при скроле
 
