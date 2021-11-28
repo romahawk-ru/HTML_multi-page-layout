@@ -176,7 +176,6 @@
     align-items: flex-start;
     margin: 0 auto;
     flex-wrap: wrap;
-    padding: 0 5px;
     max-width: 1280px;
   }
 
@@ -288,7 +287,6 @@
   }
 
   .swiper {
-    min-width: 375px;
     height: 352px;
   }
 
@@ -376,7 +374,7 @@
 
   .cases__text {
     margin: 0 0 25px 0;
-    width: 343px;
+    width: 95%;
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -700,9 +698,74 @@
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 375px) {
+
+  .container {
+    margin: 0;
+    padding: 0px 15px;
+  }
+
+  .hero-content {
+    padding: 15px 30px 15px 15px;
+  }
+
+  .hero__btns {
+    margin-bottom: 24px;
+  }
+
+  .hero-content__text {
+    width: 100%;
+  }
+
+  .swiper-horizontal >.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 15px;
+  }
+
+  .cases__inner {
+    padding: 0;
+  }
+
+  .cases__cards {
+    margin-bottom: 25px;
+    padding: 20px 20px 17px 20px;
+    min-width: 250px;
+    min-height: 140px;
+  }
+
+  .services__card {
+    margin-bottom: 20px;
+    padding: 18px 20px 40px 15px;
+    min-width: 300px;
+    width: 100%;
+    min-width: 250px;
+    height: 100%;
+    background-position: 20px 20px;
+}
+
+  .footer-top__item:nth-child(2) {
+    width: 27%;
+  }
+
+  .contacts__card {
+    margin-bottom: 25px;
+    padding: 20px;
+    min-width: 270px;
+  }
+
+  .contacts-card__btns {
+    flex-direction: column-reverse;
+  }
+
+  .contacts-card__form {
+    padding: 25px 15px 15px 15px;
+    min-width: 270px;
+    background-size: 200%;
+  }
 
 
 
 }
+
 
