@@ -8,12 +8,12 @@
   margin-bottom: 50px;
   border-top: 1px solid #E2E6F2;
   border-bottom: 1px solid #E2E6F2;
+  background: linear-gradient(180deg, #F2F4FB 0%, #F2F4FB 100%);
 }
 
 .hero-min__container {
   padding: 35px 15px 35px 15px;
   max-width: 1250px;
-  background: linear-gradient(180deg, #F2F4FB 0%, #F2F4FB 100%);
 }
 
 .hero-min__title {

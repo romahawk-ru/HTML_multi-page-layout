@@ -1,0 +1,21 @@
+/* section hero-min*/
+
+.bottom__list-item:first-child .list-item__link{
+  color: var(--color-black);
+}
+
+.bottom__list-item:nth-child(2) .list-item__link{
+  color: var(--color-black);
+}
+
+.bottom__list-item:nth-child(3) .list-item__link{
+  color: var(--color-black);
+}
+
+.bottom__list-item:nth-child(4) .list-item__link{
+  color: var(--color-black);
+}
+
+.bottom__list-item:hover .list-item__link {
+  color: var(--color-torch-red);
+}
