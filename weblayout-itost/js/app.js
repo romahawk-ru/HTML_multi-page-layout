@@ -3,7 +3,7 @@
 
 
 
-//swiper
+//Реализация работы слайдера
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
@@ -30,7 +30,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-//burger menu
+//Реализация бургер меню с фиксированием экрана и отключением скролла
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#burger').addEventListener('click', function () {
     document.querySelector('#menu').classList.add('is-active');
@@ -49,19 +49,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
-//выпадающий список телеграмм
-// window.addEventListener('DOMContentLoaded', function() {
-//   document.querySelector('#box-on').addEventListener('click', function () {
-//     document.querySelector('#contact-box').classList.add('header-contacts__box-is-active');
-//   });
-//   document.querySelector('#contact-box').addEventListener('click', function () {
-//     document.querySelector('#contact-box').classList.remove('header-contacts__box-is-active');
-//   });
-// });
-
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+/* Открытие меню контактов телеграмм при нажатии
+на кнопку, и скрытие по клику в свободной области */
 function myFunction() {
   document.getElementById("contact-box").classList.toggle("header-contacts__box-is-active");
 }
@@ -83,14 +72,7 @@ if (!event.target.matches('.dropbtn')) {
 
 
 
-
-
-
-
-
-
-
-// появление элементов при скроле
+// анимированное появление элементов при скроле
 
 function onEntry(entry) {
   entry.forEach(change => {
@@ -110,7 +92,7 @@ for (let elm of elements) {
 $('.hero__container').delay(1000).animate({'opacity':'1'},500);
 
 
-//эффекты при скроле 
+//эффекты при скроле для header
 
 var StickyElement = function(node){
   var doc = $(document), 
