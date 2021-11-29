@@ -1,0 +1,48 @@
+@media (max-width: 1080px) {
+
+  .hero-min {
+    margin-top: 80px;
+  }
+
+  .services__card:nth-child(3) .services-card__text {
+    max-width: 100%;
+  }
+
+  .services__card:nth-child(4) .services-card__text {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .hero-min {
+    margin-top: 60px;
+    margin-bottom: 25px;
+  }
+
+  .hero-min__title {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .hero-list-min__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+}
+
+@media (max-width: 350px) {
+
+  .hero-min__container {
+    padding: 20px 15px 20px 15px;
+  }
+
+  .hero-min__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+}
