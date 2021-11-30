@@ -1,0 +1,34 @@
+.cases__cards:nth-child(3) {
+  margin-bottom: 50px;
+}
+
+.cases__cards:nth-child(4) {
+  margin-bottom: 50px;
+}
+
+.cases__cards:nth-child(5) {
+  margin-bottom: 40px;
+}
+
+.cases__cards:nth-child(6) {
+  margin-bottom: 40px;
+}
+
+.cards__link-box {
+  justify-content: center;
+}
+
+.cards__link {
+  margin-bottom: 40px;
+  padding: 10px 25px 10px 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 40px;
+  color: var(--color-black);
+  background-color: var(--color-white-lilac);
+}
+
+.card-links__icon {
+  margin: 0 10px 0 0;
+}
