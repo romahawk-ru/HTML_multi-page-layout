@@ -1,3 +1,7 @@
+.list__item:nth-child(4) .header__link {
+  color: var(--color-torch-red);
+}
+
 .payment {
   margin-bottom: 40px;
   border-bottom: 1px solid var(--color-catskill-white);
