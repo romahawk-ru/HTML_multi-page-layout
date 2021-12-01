@@ -261,7 +261,8 @@
 
   .cases__container,
   .services__container,
-  .contacts__inner {
+  .contacts__inner,
+  .payment__container {
     padding: 0 50px;
   }
 
@@ -305,6 +306,10 @@
     margin: 0;
 		padding: 0 17px;
 	}
+
+  .hero-min__container {
+    padding: 20px 15px 20px 15px;
+  }
 
   .header__top {
     height: 60px;
@@ -794,6 +799,7 @@
   }
 
   .services-card__title {
+    margin-bottom: 11px;
     max-width: 195px;
   }
 
@@ -807,16 +813,20 @@
     min-width: 270px;
   }
 
-  .services__card:nth-child(1) .services-card__title {
-    margin-bottom: 40px;
+  .services__card:first-child {
+    padding: 27px 23px 47px 20px;
+  }
+
+  .services__card:first-child .services-card__title {
+    margin-bottom: 20px;
   }
 
   .services__card:nth-child(1) .services-card__text {
     max-width: 257px;
   }
 
-  .services__card:nth-child(1) .services-card__text {
-    max-width: 257px;
+  .services__card:nth-child(2) .services-card__text {
+    max-width: 260px;
   }
 
   .services__card:nth-child(3) .services-card__text {
