@@ -7,3 +7,26 @@
 .bottom__list-item:nth-child(2) .list-item__link{
   color: var(--color-torch-red);
 }
+
+@media (max-width: 375px) {
+
+  .services__card:nth-child(1),
+  .services__card:nth-child(2) {
+    padding: 16px 22px 47px 20px;
+  }
+
+  .services__card:nth-child(3) {
+    padding: 27px 23px 47px 20px;
+  }
+
+  .services__card:nth-child(1) .services-card__title {
+    margin-bottom: 11px;
+  }
+
+  .services__card:nth-child(3) .services-card__title {
+    margin-bottom: 20px;
+  }
+
+}
+
+

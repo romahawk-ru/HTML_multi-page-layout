@@ -100,6 +100,16 @@
     padding: 0 17px;
   }
 
+  .contact-inner__top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-inner-bottom__title {
+    text-align: center;
+  }
+
+
   
 }
 
@@ -126,6 +136,12 @@
 
   .header__bottom-btn {
     padding: 9px 40px;
+  }
+
+  .services__card:nth-child(3),
+  .services__card:nth-child(4),
+  .services__card:nth-child(5) {
+    padding: 16px 22px 47px 20px;
   }
 
 }
