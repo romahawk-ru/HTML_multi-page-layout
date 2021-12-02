@@ -15,3 +15,14 @@
 .bottom__list-item:nth-child(4) .list-item__link{
   color: var(--color-torch-red);
 }
+
+@media (max-width: 375px) {
+  .services__card:first-child {
+    padding: 27px 23px 47px 20px;
+  }
+
+  .services__card:nth-child(1) .services-card__title {
+    margin-bottom: 20px;
+  }
+  
+}

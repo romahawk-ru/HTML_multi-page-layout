@@ -49,3 +49,18 @@
   background-position: right center;
   background-size: 5px 8px;
 }
+
+@media (max-width: 375px) {
+  
+  .services__card:nth-child(3), .services__card:nth-child(4), .services__card:nth-child(5) {
+    padding: 27px 23px 47px 20px;
+  }
+
+  .services__card:first-child .services-card__title,
+  .services__card:nth-child(3) .services-card__title,
+  .services__card:nth-child(4) .services-card__title, 
+  .services__card:nth-child(5) .services-card__title {
+    margin-bottom: 20px;
+  }
+
+}
