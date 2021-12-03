@@ -119,3 +119,41 @@ var StickyElement = function(node){
   $(window).on('scroll', onScroll);
 };
 var sticky = new StickyElement($('.sticky-element'));
+
+// реализация Slick слайдера
+
+$(document).ready(function(){
+  $('.slider__carousel').slick({
+    arows: true, //стрелки
+    dots: false, //точки пагинации
+    adaptiveHeigth: true, //автоматическая регулировка высоты
+    slidesToShow: 4, //количество показываемых слайдов
+    slidesToScroll: 1, //количество появляющихся слайдов при переключении
+    speed: 1000, //скорость пролистывания
+    easing: 'easy-in-out', //алгоритм анимации
+    autoplay: true, //включение автопроигрывания
+    autoplaySpeed: 1000, // скорость автопроигрывания
+    appendArrows:$('.arrow__box'),
+    responsive:[
+
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+        {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+        {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+});
