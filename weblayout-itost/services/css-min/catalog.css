@@ -1,0 +1,457 @@
+
+.list__item:nth-child(2) .header__link {
+  color: var(--color-black);
+}
+
+.bottom__list-item:first-child .list-item__link {
+  color: var(--color-torch-red);
+}
+
+/* section description */
+
+.description__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 0 15px;
+  max-width: 1250px;
+}
+
+    /*left */
+
+.descr__left {
+  max-width: 800px;
+}
+
+.descr__text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--color-black);
+}
+
+    /*right */
+
+.descr__right {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 30px;
+  border-left: 1px solid var(--color-catskill-white);
+}
+
+.descr-right__top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.descr-right-top__item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-left: 45px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 30px 30px;
+}
+
+.descr-right-top-item__subtitle {
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-black);
+}
+
+.descr-right-top-item__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-black);
+}
+
+.descr-right-top-item__text--icon-after {
+  position: relative;
+}
+
+.descr-right-top-item__text--icon-after::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 120px;
+  width: 15px;
+  height: 15px;
+  background-image: url('/img/descr-right-top-icon-1-1.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 15px 15px;
+}
+
+.descr-right__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.descr-right__btn {
+  padding: 10px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 5px;
+  color: var(--color-white);
+  background-color: var(--color-torch-red);
+  transition: transform 0.3s ease-in-out;
+}
+
+.descr-right__btn:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* section advantages */
+
+.advantages__container {
+  padding-top: 20px;
+  padding: 0 15px;
+  max-width: 1250px;
+}
+
+.advantages__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: var(--color-torch-red);
+}
+
+.advantages__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1040px;
+}
+
+.advantages__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 30px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 189px;
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 50px rgba(191, 190, 190, 0.25);
+  border-radius: 5px;
+}
+
+.advantages__card:not(:nth-child(3n)) {
+  margin-right: 70px;
+}
+
+.advantages-card__img {
+  margin-bottom: 20px;
+}
+
+.advantages-card__text {
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-black);
+}
+
+/* section stages */
+
+.stages {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--color-catskill-white);
+}
+
+.stages__inner {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.stages-inner__card {
+  position: relative;
+  padding-bottom: 30px;
+  padding-left: 38px;
+  border-left: 4px solid red;
+}
+
+.stages-inner__card:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
+.inner-card__number {
+  position: absolute;
+  top: -15px;
+  left: -28px;
+  padding: 10px 18px;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--color-white);
+  background: linear-gradient(180deg, #FF0033 0%, #C9052C 100%);
+  box-shadow: 0px 0px 50px #FF98AC;
+}
+
+.stages-inner__card:nth-child(1) .inner-card__number {
+  left: -27px;
+  padding: 10px 20px;
+}
+
+.stages-inner__card:nth-child(4) .inner-card__number {
+  padding: 10px 17px;
+}
+
+.stages-inner__card:nth-child(7) .inner-card__number {
+  left: -24px;
+}
+
+.stages-inner-card__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-black);
+}
+
+.stages-inner-card__text {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-black);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 14px 12px;
+}
+
+    /*кнопки внизу контейнера */
+
+.bottom-card-btn__box {
+  margin-bottom: 40px;
+}
+
+.bottom-card__btn--left {
+  margin-right: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bottom-card__btn--left:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bottom-card__btn {
+  position: relative;
+  padding-bottom: 8px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-black);
+}
+
+.bottom-card__btn::before {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 50%;
+	-webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-catskill-white);
+  transition: width 0.3s ease-out;
+}
+
+.bottom-card__btn:hover:before {
+  width: 130px;
+  transition: width 0.3s ease-out;
+}
+
+/* section possible options */
+
+.possible-options {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--color-catskill-white);
+}
+
+.options__container {
+  margin: 0 auto;
+  max-width: 1150px;
+  padding: 0px 20px;
+}
+
+.options__title {
+  text-align: left;
+}
+
+.options__inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.options-inner__link {
+  margin: 0px 18px 20px 0;
+  padding: 4px 5px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 22px;
+  color: var(--color-black);
+  border-radius: 5px;
+  background-color: var(--color-white-lilac);
+  box-shadow: 0px 0px 20px #F4F4F4;
+}
+
+
+/* adaptiv */
+
+@media (max-width: 1080px) {
+
+  .description__container {
+    flex-direction: column;
+  }
+
+  .descr__right {
+    border: none;
+  }
+
+  .advantages__card:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .descr__right {
+    padding: 0;
+  }
+
+  .descr__text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .descr-right-top-item__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .descr-right-top-item__text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .advantages__inner {
+    justify-content: center;
+  }
+
+  .advantages__title {
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .advantages-card__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .stages-inner-card__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .stages-inner-card__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .stages__inner {
+    max-width: 350px;
+  }
+
+  .description__container {
+    margin-bottom: 30px;
+  }
+
+  .advantages__card {
+    margin-bottom: 30px;
+  }
+
+  .stages__inner {
+    margin-bottom: 30px;
+  }
+
+  .bottom-card-btn__box {
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .descr-right__bottom {
+    flex-direction: column;
+  }
+
+  .bottom-card__btn--left {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .advantages__title {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+  .stages__inner {
+    max-width: 230px;
+  }
+
+  .options__inner {
+    justify-content: space-between;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .stages__inner {
+    max-width: 210px;
+  }
+  
+}
