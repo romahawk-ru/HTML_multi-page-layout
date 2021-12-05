@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/media.css">
+  <link rel="stylesheet" href="/services/css-min/website_development.css">
+  <link rel="stylesheet" href="/services/css-min/services.css">
+  <link rel="stylesheet" href="/services/css-min/cases.css">
+  <link rel="stylesheet" href="/services/css-min/card.css">
+  <link rel="stylesheet" href="/services/css-min/corporate.css">
+  <link rel="stylesheet" href="/services/css-min/catalog.css">
+  <link rel="stylesheet" href="/services/css-min/shop.css">
+  <link rel="stylesheet" href="/services/css-min/media-min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__container">
+      <div class="header__top">
+        <div class="header__top-container">
+          <a href="" class="header__link"><img class="header__logo" src="/img/new_logo.svg" alt="Логотип ITost"></a>
+          <ul class="header-social__list">
+            <li class="social__item">
+              <a href="" class="social__link" style="background-image: url('/img/social-icon-vbr.svg');"></a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link" style="background-image: url('/img/social-icon-wtsp.svg');"></a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link" style="background-image: url('/img/social-icon-tg.svg');"></a>
+            </li>
+          </ul>
+          <button class="burger__btn" id="burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+          <button class="burger-btn__close" id="burger-close">
+            <span class="burger-btn-close__line"></span>
+            <span class="burger-btn-close__line"></span>
+          </button>
+          <div class="burger-menu__container" id="menu">
+
+            <div class="burger-menu__top">
+              <div class="burger-menu__top-container">
+                <ul class="burger-menu__top-list">
+                  <li class="bottom__list-item burger-menu__top-item"><a href="" class="list-item__link">Разработка сайтов</a></li>
+                  <li class="bottom__list-item burger-menu__top-item"><a href="" class="list-item__link">Продвижение проектов</a></li>
+                  <li class="bottom__list-item burger-menu__top-item"><a href="" class="list-item__link">Адаптивный веб-дизайн</a></li>
+                  <li class="bottom__list-item burger-menu__top-item"><a href="" class="list-item__link">Сопровождение и развитие</a></li>
+                </ul>
+              </div>
+            </div>
+            <nav class="header__nav burger-menu__nav">
+              <ul class="burger-menu__bottom-list">
+                <li class="list__item burger-menu-list__item"><a href="" class="header__link burger-menu__link">О компании</a></li>
+                <li class="list__item burger-menu-list__item"><a href="" class="header__link burger-menu__link">Кейсы</a>
+                  <div class="header__link-case burger-menu__link-case">
+                    <p class="link-case__text">+3</p>
+                  </div>
+                </li>
+                <li class="list__item burger-menu-list__item"><a href="" class="header__link burger-menu__link">Отзывы</a>
+                  <div class="header__link-case burger-menu__link-case">
+                    <p class="link-case__text">+1</p>
+                  </div>
+                </li>
+                <li class="list__item burger-menu-list__item"><a href="" class="header__link burger-menu__link">Оплата услуг</a></li>
+                <li class="list__item burger-menu-list__item"><a href="" class="header__link burger-menu__link">Блог</a>
+                  <div class="header__link-case burger-menu__link-case">
+                    <p class="link-case__text">+1</p>
+                  </div>
+                </li>
+                <li class="list__item burger-menu-list__item"><a href="" class="header__link burger-menu__link">Контакты</a></li>
+              </ul>
+            </nav>
+            <a href="" class="header__bottom-btn burger-menu__btn">Заказать сайт</a>
+          </div>
+          <div class="link__container">
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="list__item"><a href="" class="header__link">О компании</a></li>
+                <li class="list__item"><a href="" class="header__link">Кейсы</a>
+                  <div class="header__link-case">
+                    <p class="link-case__text">+3</p>
+                  </div>
+                </li>
+                <li class="list__item"><a href="" class="header__link">Отзывы</a>
+                  <div class="header__link-case">
+                    <p class="link-case__text">+1</p>
+                  </div>
+                </li>
+                <li class="list__item"><a href="" class="header__link">Оплата услуг</a></li>
+                <li class="list__item"><a href="" class="header__link">Блог</a>
+                  <div class="header__link-case">
+                    <p class="link-case__text">+1</p>
+                  </div>
+                </li>
+                <li class="list__item"><a href="" class="header__link">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__contacts">
+              <button onclick="myFunction()" class="contacts__link contacts__link--icon btn-reset dropbtn" id="box-on">Telegram</button>
+              <a href="tel:+380980506804" class="contacts__phone">+38 (098) 050-68-04</a>
+            </div>
+          </div>
+          <div class="header-contacts__box" id="contact-box">
+            <div class="header__contacts-border">
+              <div class="header__contacts">
+                <p class="contacts__link contacts__link-tlg-logo">Telegram</p>
+                <a href="tel:+380980506804" class="contacts__phone">+38 (098) 050-68-04</a>
+              </div>
+            </div>
+            <div class="header__contacts-border">
+              <div class="header__contacts">
+                <p class="contacts__link contacts__link-tlg-logo">Telegram</p>
+                <a href="tel:+380980506804" class="contacts__phone">+38 (098) 050-68-04</a>
+              </div>
+            </div>
+            <div class="header__contacts-border">
+              <div class="header__contacts">
+                <p class="contacts__link contacts__link-tlg-logo">Telegram</p>
+                <a href="tel:+380980506804" class="contacts__phone">+38 (098) 050-68-04</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div class="sticky-element">
+    <div class="sticky-anchor"></div>
+    <div class="sticky-content">        
+        <section class="sticky">
+          <aside class="aside-top__fixed">
+            <div class="header__bottom">
+              <div class="header__top-container">
+                <ul class="header__bottom-list">
+                  <li class="bottom__list-item"><a href="" class="list-item__link">Разработка сайтов</a></li>
+                  <li class="bottom__list-item"><a href="" class="list-item__link">Продвижение проектов</a></li>
+                  <li class="bottom__list-item"><a href="" class="list-item__link">Адаптивный веб-дизайн</a></li>
+                  <li class="bottom__list-item"><a href="" class="list-item__link">Сопровождение и развитие</a></li>
+                </ul>
+                <button class="header__bottom-btn">Заказать сайт</button>
+              </div>
+            </div>
+          </aside>
+        </section>                        
+    </div>        
+  </div>
+
+
+
+  <main>
+    <section class="hero-min">
+      <div class="container hero-min__container">
+        <h1 class="hero-min__title">Интернет-магазин</h1>
+        <ul class="hero-min__list">
+          <li class="hero-min-list__item">
+            <a href="" class="hero-list-min__link" style="background-image: url('/img/hero-navigation-arrow.svg');">Главная</a>
+          </li>
+          <li class="hero-min-list__item">
+            <a href="" class="hero-list-min__link" style="background-image: url('/img/hero-navigation-arrow.svg');">Услуги</a>
+          </li>
+          <li class="hero-min-list__item">
+            <a href="" class="hero-list-min__link" style="background-image: url('/img/hero-navigation-arrow.svg');">Разработка сайтов</a>
+          </li>
+          <li class="hero-min-list__item">
+            <a href="" class="hero-list-min__link">Интернет-магазин</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="description">
+      <div class="container description__container">
+        <div class="descr__left">
+          <p class="descr__text">Интернет-магазин это надежная площадка для развития бизнеса в интернете. Она позволяет совершать продажи из любой точки мира. Ваши склады могут находиться где-угодно: представитель целевой аудитории получит приобретенный товар благодаря службе доставки.</p>
+          <p class="descr__text">Дизайн интернет-магазина разрабатывается в соответствии с запросами и пожеланиями заказчика. Простой и приятный в использовании ресурс вызывает рост узнаваемости, а также доверия потребителей.</p>
+          <p class="descr__text">Опытные интернет-маркетологи гарантируют результативное продвижение веб-сайта. Профессионалы генерируют приток потенциальных клиентов, используя инновационный подход к рекламе.</p>
+        </div>
+        <div class="descr__right">
+          <div class="descr-right__top">
+            <div class="descr-right-top__item" style="background-image: url('/img/shop--descr-right-top-icon-1.svg');">
+              <span class="descr-right-top-item__subtitle">Тип сайта:</span>
+              <span class="descr-right-top-item__text descr-right-top-item__text--icon-after">Интернет-магазин</span>
+            </div>
+            <div class="descr-right-top__item" style="background-image: url('/img/descr-right-top-icon-2.svg');">
+              <span class="descr-right-top-item__subtitle">Стоимость:</span>
+              <span class="descr-right-top-item__text">От 300$</span>
+            </div>
+            <div class="descr-right-top__item" style="background-image: url('/img/descr-right-top-icon-3.svg');">
+              <span class="descr-right-top-item__subtitle">Срок разработи:</span>
+              <span class="descr-right-top-item__text">От 14 дней</span>
+            </div>
+          </div>
+          <div class="descr-right__bottom">
+            <a href="http://" class="descr-right__btn">Обсудить проект</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container advantages__container">
+        <h3 class="advantages__title">Преимущества интернет-магазина</h3>
+        <div class="advantages__inner">
+          <div class="advantages__card">
+            <img class="advantages-card__img" src="/img/shop--advange-img-1.svg" alt="">
+            <p class="advantages-card__text">Тщательный анализ рынка, конкурентов, потребителей</p>
+          </div>
+          <div class="advantages__card">
+            <img class="advantages-card__img" src="/img/shop--advange-img-2.svg" alt="">
+            <p class="advantages-card__text">Неповторимая продающая структура увеличивает заказы</p>
+          </div>
+          <div class="advantages__card">
+            <img class="advantages-card__img" src="/img/shop--advange-img-3.svg" alt="">
+            <p class="advantages-card__text">Беспроблемная быстрая навигация по интернет-магазину</p>
+          </div>
+          <div class="advantages__card">
+            <img class="advantages-card__img" src="/img/shop--advange-img-4.svg" alt="">
+            <p class="advantages-card__text">Продуманный интерфейс обеспечивает удобство использования</p>
+          </div>
+          <div class="advantages__card">
+            <img class="advantages-card__img" src="/img/shop--advange-img-5.svg" alt="">
+            <p class="advantages-card__text">Адаптация веб-сайта под все типы мобильных устройств.</p>
+          </div>
+          <div class="advantages__card">
+            <img class="advantages-card__img" src="/img/shop--advange-img-6.svg" alt="">
+            <p class="advantages-card__text">Гарантированная бесперебойная работа торговой площадки</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stages">
+      <div class="container stages__container">
+        <h3 class="advantages__title stages__title">Этапы разработки интернет-магазина</h3>
+        <div class="stages__inner">
+          <div class="stages-inner__card">
+            <span class="inner-card__number">1</span>
+            <h4 class="stages-inner-card__subtitle">Подготовка</h4>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Прописываем цели, задачи и идеи сайта;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Составляем техническое задание на разработку интернет-магазина;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Оцениваем стоимость разработки сайта и подписываем договор.</p>
+          </div>
+          <div class="stages-inner__card">
+            <span class="inner-card__number">2</span>
+            <h4 class="stages-inner-card__subtitle">Базовые настройки</h4>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Подбираем и регистрируем доменное имя;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Оформляем хостинг.</p>
+          </div>
+          <div class="stages-inner__card">
+            <span class="inner-card__number">3</span>
+            <h4 class="stages-inner-card__subtitle">Дизайн сайта</h4>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Продумываем интерфейс, составляем карту интернет-магазина и делаем прототип;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Разрабатываем уникальный дизайн-макет главной страницы сайта;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Согласовываем главную страницу и приступаем к внутренним;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Утверждаем весь дизайн сайта.</p>
+          </div>
+          <div class="stages-inner__card">
+            <span class="inner-card__number">4</span>
+            <h4 class="stages-inner-card__subtitle">Адаптивная верстка</h4>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Выполняем кроссбраузерную и адаптивную верстку;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Тестируем отображение на разных устройствах и утверждаем;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Производим интеграцию с административной панелью.</p>
+          </div>
+          <div class="stages-inner__card">
+            <span class="inner-card__number">5</span>
+            <h4 class="stages-inner-card__subtitle">Наполнение сайта</h4>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Создаем категории / карточки товаров по подготовленной карте интернет-магазина;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Наполняем предоставленным контентом страницы.</p>
+          </div>
+          <div class="stages-inner__card">
+            <span class="inner-card__number">6</span>
+            <h4 class="stages-inner-card__subtitle">Тестирование и запуск сайта</h4>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Загружаем сайт на хостинг;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Тестируем функционально весь сайт;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Обучаем пользованию сайтом и передаем доступы;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Подписываем акт выполненных работ.</p>
+          </div>
+          <div class="stages-inner__card">
+            <span class="inner-card__number">7</span>
+            <h4 class="stages-inner-card__subtitle">Сопровождение и развитие</h4>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Гарантийный бесплатный период сопровождения в течение 14 дней;</p>
+            <p class="stages-inner-card__text" style="background-image: url('/img/stages-section-arrow.svg');">Подписываем договор на постоянное сопровождение и развитие.</p>
+          </div>
+        </div>
+        <div class="descr-right__bottom bottom-card-btn__box">
+          <a href="http://" class="descr-right__btn bottom-card__btn--left">Обсудить проект</a>
+          <a href="http://" class="bottom-card__btn">Заполнить бриф</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="possible-options">
+      <div class="container options__container">
+        <h3 class="advantages__title options__title">Возможные опции интернет-магазина:</h3>
+        <div class="options__inner">
+          <a class="options-inner__link" href="http://">Слайдер</a>
+          <a class="options-inner__link" href="http://">Форма обратной связи</a>
+          <a class="options-inner__link" href="http://">Новости / блог</a>
+          <a class="options-inner__link" href="http://">Заказ звонка в 1 клик</a>
+          <a class="options-inner__link" href="http://">Мультиязычность</a>
+          <a class="options-inner__link" href="http://">Фото / видео галерея</a>
+          <a class="options-inner__link" href="http://">Карта сайта</a>
+          <a class="options-inner__link" href="http://">Вопросы и ответы</a>
+          <a class="options-inner__link" href="http://">Google Maps</a>
+          <a class="options-inner__link" href="http://">Отзывы о компании</a>
+          <a class="options-inner__link" href="http://">Административная панель</a>
+          <a class="options-inner__link" href="http://">Адаптивная верстка</a>
+          <a class="options-inner__link" href="http://">SSL - сертификат</a>
+          <a class="options-inner__link" href="http://">Онлайн - консультант</a>
+          <a class="options-inner__link" href="http://">Каталог услуг / товаров</a>
+          <a class="options-inner__link" href="http://">Акции компании</a>
+          <a class="options-inner__link" href="http://">Подписка на рассылку</a>
+          <a class="options-inner__link" href="http://">Резервное копирование сайта</a>
+          <a class="options-inner__link" href="http://">Настройки SEO</a>
+          <a class="options-inner__link" href="http://">Аналитика</a>
+          <a class="options-inner__link" href="http://">Неограниченное количество страниц</a>
+          <a class="options-inner__link" href="http://">Прайс-лист</a>
+          <a class="options-inner__link" href="http://">Онлайн - оплата</a>  
+          <a class="options-inner__link" href="http://">Корзина</a>  
+          <a class="options-inner__link" href="http://">Поиск по сайту</a>  
+          <a class="options-inner__link" href="http://">Фильтр товаров</a>  
+          <a class="options-inner__link" href="http://">Сравнение товаров</a>  
+          <a class="options-inner__link" href="http://">Покупка в 1 клик</a>            
+        </div>
+      </div>
+    </section>
+
+    <section class="cases">
+      <div class="container cases__container">
+        <h2 class="title">Кейсы</h2>
+        <p class="cases__text">Предлагаем вам ознакомиться с реализованными проектами, чтобы убедиться в компетентности и профессионализме специалистов.</p>
+        <div class="cases__inner">
+          <div class="cases__cards element-animation" style="background-image: url('/img/case-card-1.svg');">
+            <h3 class="cards__title">Frootiz</h3>
+            <p class="cards__text">Интернет-магазин</p>
+            <a href="" class="cards__btn"><img class="cards__icon" src="/img/oko.svg"><span class="card__btn-text">Смотреть проект</span></a>
+          </div>
+          <div class="cases__cards element-animation" style="background-image: url('/img/case-card-2.svg');">
+            <h3 class="cards__title">Моя Картина</h3>
+            <p class="cards__text">Landing Page</p>
+            <a href="" class="cards__btn"><img class="cards__icon" src="/img/oko.svg"><span class="card__btn-text">Смотреть проект</span></a>
+          </div>
+          <div class="cases__cards element-animation" style="background-image: url('/img/case-card-3.svg');">
+            <h3 class="cards__title">Intell Avto</h3>
+            <p class="cards__text">Корпоративный сайт</p>
+            <a href="" class="cards__btn"><img class="cards__icon" src="/img/oko.svg"><span class="card__btn-text">Смотреть проект</span></a>
+          </div>
+          <div class="cases__cards element-animation" style="background-image: url('/img/case-card-4.svg');">
+            <h3 class="cards__title">IF Billion</h3>
+            <p class="cards__text">Корпоративный сайт</p>
+            <a href="" class="cards__btn"><img class="cards__icon" src="/img/oko.svg"><span class="card__btn-text">Смотреть проект</span></a>
+          </div>
+        </div>
+        <div class="cards__link-box">
+          <a href="" class="cards-link__btn">
+            <span class="card-links__icon">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_154_1009)">
+                <path d="M14.5896 6.6114C14.541 6.30667 14.2545 6.09908 13.9498 6.1477C13.6451 6.19632 13.4375 6.48277 13.4861 6.78749C13.4866 6.79083 13.4872 6.79414 13.4878 6.79745C14.0568 10.1469 11.8028 13.3234 8.45332 13.8923C5.10389 14.4613 1.9274 12.2073 1.35842 8.8579C0.789438 5.50846 3.04347 2.33198 6.39287 1.763C8.4527 1.41309 10.5493 2.13261 11.9602 3.67361L9.48509 4.49827C9.19228 4.5957 9.03393 4.91201 9.13132 5.20482C9.13136 5.20488 9.13139 5.20498 9.13142 5.20505C9.22885 5.49785 9.54516 5.65621 9.83797 5.55881C9.83807 5.55878 9.83813 5.55875 9.8382 5.55875L13.1905 4.44131C13.4188 4.36529 13.5728 4.15168 13.5727 3.91109V0.558736C13.5727 0.250149 13.3226 0 13.014 0C12.7054 0 12.4553 0.250149 12.4553 0.558736V2.59974C9.57787 -0.137008 5.02669 -0.0229818 2.28994 2.85441C-0.446806 5.7318 -0.332813 10.283 2.54461 13.0198C5.42203 15.7565 9.97318 15.6425 12.71 12.7651C14.2705 11.1243 14.967 8.84418 14.5896 6.6114Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_154_1009">
+                <rect width="15" height="15" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </span>
+            Загрузить ещё
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container contacts__container">
+        <div class="contacts__inner">
+          <div class="contacts__card element-animation">
+            <h3 class="contacts-card__title">Давайте развивать бизнес вместе.</h3>
+            <span class="contacts-card__subtitle">Есть решение для вашего проекта.</span>
+            <p class="contacts-card__text">Заполните форму или свяжитесь с нами в соц. сетях или мессенджерах.​ Менеджеры проконсультируют вас по любому вопросу.</p>
+            <div class="contacts-card__btns">
+              <a href="" class="contacts-card__btn">
+                <span class="card-btn__icon" style="background-image: url('/img/viber-icon.svg');"></span>
+                <span class="card-btn__text">Viber</span>
+              </a>
+              <a href="" class="contacts-card__btn">
+                <span class="card-btn__icon" style="background-image: url('/img/tlg-icon.svg');"></span>
+                <span class="card-btn__text">Telegram</span>
+              </a>
+              <a href="" class="contacts-card__btn">
+                <span class="card-btn__icon" style="background-image: url('/img/wtsp-icon.svg');"></span>
+                <span class="card-btn__text">WhatsApp</span>
+              </a>
+            </div>
+            <a href="" class="contacts-card__link">
+              <span class="card-link__icon" style="background-image: url('/img/gmail-icon.svg');"></span>
+              <span class="card-link__text">work@itost.online</span>
+            </a>
+          </div>
+          <div class="contacts-card__form element-animation">
+            <h2 class="card__form__title">Оставить заявку</h2>
+            <form class="card__form" action="тут будет ссылка" autocomplete method="POST">
+              <input class="form__input" type="text" placeholder="Ваше имя" name="name">
+              <input class="form__input" type="email" placeholder="Viber / Telegram / WhatsApp / Email" name="Email">
+              <textarea class="form__input form__input-text" cols="1" rows="4" placeholder="Ваше сообщение" name="message"></textarea>
+              <button type="submit" class="form__btn btn">Отправить сообщение</button>
+              <p class="form__text">Нажимая на кнопку, я даю согласие на <span class="form__text-mod">обработку своих персональных данных</span></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer-top__inner">
+          <div class="footer-top__item">
+            <a href="" class="header__link"><img class="header__logo footer__logo" src="/img/new_logo.svg" alt="Логотип Softost"></a>
+            <p class="footer-top__text">Помогаем украинским и зарубежным предпринимателям диджитализировать бизнес с 2016 года. Команда ​ITost - эксперты своей сферы с успешными кейсами.</p>
+            <div class="footer-top__links">
+              <a href="" class="footer-left__link">Карта сайта</a>
+              <a href="" class="footer-left__link">Контакты</a>
+            </div>
+          </div>
+          <div class="footer-top__item">
+            <nav class="footer__nav">
+              <ul class="footer-nav__list">
+                <li class="nav-list__item">
+                  <a href="" class="nav-list__link">О компании</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="" class="nav-list__link">Кейсы</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="" class="nav-list__link">Отзывы</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="" class="nav-list__link">Оплата услуг</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="" class="nav-list__link">Блог</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-top__item">
+            <ul class="footer-right__list">
+              <li class="right-list__item"><a href="" class="right-list__link">Разработка сайтов</a></li>
+              <li class="right-list__item"><a href="" class="right-list__link">Продвижение проектов</a></li>
+              <li class="right-list__item"><a href="" class="right-list__link">Адаптивный веб-дизайн</a></li>
+              <li class="right-list__item"><a href="" class="right-list__link">Сопровождение и развитие</a></li>
+            </ul>
+          </div>
+          <div class="footer-top__item">
+            <div class="footer__social">
+              <span class="social__text">Связаться с нами:</span>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="" class="social__link" style="background-image: url('/img/social-icon-fb.svg');"></a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link" style="background-image: url('/img/social-icon-tg.svg');"></a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link" style="background-image: url('/img/social-icon-vbr.svg');"></a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link" style="background-image: url('/img/social-icon-wtsp.svg');"></a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link" style="background-image: url('/img/social-icon-mail.svg');"></a>
+                </li>
+              </ul>
+              <span class="social__text">Принимаем к оплате:</span>
+              <ul class="payment__list">
+                <li class="payment__item">
+                  <span class="payment__link" style="background-image: url('/img/payments-icon-visa.svg');"></span>
+                </li>
+                <li class="payment__item">
+                  <span class="payment__link" style="background-image: url('/img/payments-icon-mcard.svg');"></span>
+                </li>
+                <li class="payment__item">
+                  <span class="payment__link payment__link-resize" style="background-image: url('/img/payments-icon-ppal.svg');"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copyright">&#169; ITost. Все права защищены.</span>
+        <ul class="copyright__list">
+          <li class="copyright__item">
+            <a href="" class="copyright__link">Политика конфиденциальности</a>
+          </li>
+          <li class="copyright__item">
+            <a href="" class="copyright__link">Условия оказания услуг</a>
+          </li>
+          <li class="copyright__item">
+            <a href="" class="copyright__link">Юридическая информация</a>
+          </li>
+        </ul>
+        <a href="" class="copyright__link-bottom">Made in <span class="copyright-link__text">itost.online</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

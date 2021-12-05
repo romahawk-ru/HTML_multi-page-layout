@@ -86,7 +86,7 @@
   content: '';
   position: absolute;
   top: 0;
-  left: 100px;
+  left: 138px;
   width: 15px;
   height: 15px;
   background-image: url('/img/descr-right-top-icon-1-1.svg');
@@ -185,7 +185,7 @@
 .stages__inner {
   margin: 0 auto;
   margin-bottom: 40px;
-  max-width: 600px;
+  max-width: 680px;
 }
 
 .stages-inner__card {
@@ -316,6 +316,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .options-inner__link {
