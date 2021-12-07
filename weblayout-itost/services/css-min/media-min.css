@@ -102,16 +102,22 @@
 
   .contact-inner__top {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    align-content: center;
   }
 
   .contact-inner-bottom__title {
     text-align: center;
   }
 
+  .contact-inner-top__item {
+    margin-bottom: 25px;
+  }
+
 
   
 }
+
 
 @media (max-width: 375px) {
 

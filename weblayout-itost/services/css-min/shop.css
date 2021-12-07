@@ -182,6 +182,10 @@
   border-bottom: 1px solid var(--color-catskill-white);
 }
 
+.stages__title {
+  margin-bottom: 70px;
+}
+
 .stages__inner {
   margin: 0 auto;
   margin-bottom: 40px;
@@ -297,17 +301,18 @@
 /* section possible options */
 
 .possible-options {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border-bottom: 1px solid var(--color-catskill-white);
 }
 
 .options__container {
   margin: 0 auto;
-  max-width: 1150px;
-  padding: 0px 20px;
+  max-width: 1280px;
+  padding: 0px 60px;
 }
 
 .options__title {
+  margin-bottom: 30px;
   text-align: left;
 }
 
@@ -320,8 +325,8 @@
 }
 
 .options-inner__link {
-  margin: 0px 18px 20px 0;
-  padding: 4px 5px;
+  margin: 0px 15px 20px 0;
+  padding: 9px 10px;
   font-weight: 300;
   font-size: 12px;
   line-height: 22px;

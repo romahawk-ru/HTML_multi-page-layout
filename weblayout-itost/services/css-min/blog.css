@@ -148,8 +148,14 @@
 
 /*адаптивность*/
 
-
-
+@media (max-width: 1080px) {
+  .blog__card.element-animation {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+  }
+}
+ 
 @media (max-width: 960px) {
   .blog__container {
     margin: 0 auto;

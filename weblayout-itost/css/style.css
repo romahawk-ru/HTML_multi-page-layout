@@ -6,6 +6,7 @@
 
 :root {
   --color-cobalt: #014ea8;
+  --color-endeavour: #014FA8;
   --color-black: #000000;
   --color-wild-sand: #f5f5f5;
   --color-catskill-white: #e2e6f2;
@@ -960,7 +961,9 @@ a {
   font-weight: 500;
   font-size: 23px;
   line-height: 28px;
-  color: var(--color-torch-red);
+  background: linear-gradient(180deg, #FF1536 0%, #BE021D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contacts-card__subtitle {

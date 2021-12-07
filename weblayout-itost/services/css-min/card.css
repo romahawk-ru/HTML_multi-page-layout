@@ -78,21 +78,20 @@
   color: var(--color-black);
 }
 
-.descr-right-top-item__text--icon-after {
-  position: relative;
+.descr-right-top-item__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.descr-right-top-item__text--icon-after::after {
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: 100px;
+.descr-right-top-item__icon {
+  margin-left: 5px;
   width: 15px;
   height: 15px;
-  background-image: url('/img/descr-right-top-icon-1-1.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 15px 15px;
 }
 
 .descr-right__bottom {
@@ -132,7 +131,9 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 37px;
-  color: var(--color-torch-red);
+  background: linear-gradient(180deg, #FF1536 0%, #BE021D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .advantages__inner {
@@ -297,17 +298,18 @@
 /* section possible options */
 
 .possible-options {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border-bottom: 1px solid var(--color-catskill-white);
 }
 
 .options__container {
   margin: 0 auto;
-  max-width: 1150px;
-  padding: 0px 20px;
+  max-width: 1280px;
+  padding: 0px 60px;
 }
 
 .options__title {
+  margin-bottom: 30px;
   text-align: left;
 }
 
@@ -316,11 +318,12 @@
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .options-inner__link {
-  margin: 0px 18px 20px 0;
-  padding: 4px 5px;
+  margin: 0px 15px 20px 0;
+  padding: 9px 10px;
   font-weight: 300;
   font-size: 12px;
   line-height: 22px;
@@ -330,6 +333,24 @@
   box-shadow: 0px 0px 20px #F4F4F4;
 }
 
+.cards__link-box {
+  justify-content: flex-end;
+}
+
+.cards__link {
+  margin-bottom: 40px;
+  color: var(--color-endeavour);
+}
+
+.card-links__icon svg path {
+  fill: var(--color-endeavour);
+}
+
+.card-links__icon {
+  margin: 0 0 0 10px;
+  width: 13px;
+  height: 12px;
+}
 
 /* adaptiv */
 
@@ -348,6 +369,15 @@
   }
 
 }
+
+@media (max-width: 768px) {
+
+  .stages__container {
+    padding: 0 50px;
+  }
+
+}
+
 
 @media (max-width: 576px) {
 

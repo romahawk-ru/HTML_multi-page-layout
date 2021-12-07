@@ -6,6 +6,30 @@
 .list__item:nth-child(2) .header__link {
   color: var(--color-black);
 }
+
+.cases {
+  margin-bottom: 40px;
+}
+
+.cards__link-box {
+  justify-content: flex-end;
+}
+
+.cards__link {
+  margin-bottom: 40px;
+  color: var(--color-endeavour);
+}
+
+.card-links__icon svg path {
+  fill: var(--color-endeavour);
+}
+
+.card-links__icon {
+  margin: 0 0 0 10px;
+  width: 13px;
+  height: 12px;
+}
+
  /* section company */
 
 .company {
@@ -43,7 +67,7 @@
 
 .company-inner__item {
   position: relative;
-  padding: 20px 95px;
+  padding: 20px 5px 20px 75px;
 }
 
 .inner-item__icon {
@@ -81,7 +105,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 30px 0 60px 0;
+  padding: 30px 0 45px 0;
   max-width: 950px;
 }
 
@@ -90,16 +114,22 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 15px;
+  padding: 1px 15px 1px 15px;
   width: 200px;
   box-shadow: 0px 4px 50px rgba(191, 190, 190, 0.25);
   border-radius: 5px;
-  padding: 10px 15px 20px 15px;
-  background-color: var(--color-white);
+  background-image: url('/img//company-card-bg-static.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250%;
   transition: all 0.3s ease-in-out;
+  background-color: var(--color-white);
+  cursor: pointer;
 }
 
 .bottom-inner__card:hover {
-  background-color: var(--color-torch-red);
+  background-image: url('/img/company-card-bg.svg');
   transition: all 0.3s ease-in-out;
 }
 
@@ -114,7 +144,7 @@
 }
 
 .bottom-inner__title {
-  margin: 0 0 6px 0;
+  margin: 11px 0 6px 0;
   font-weight: 400;
   font-size: 70px;
   line-height: 85px;
@@ -124,6 +154,7 @@
 
 .bottom-inner__text {
   margin: 0;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: 300;
   font-size: 14px;
@@ -217,7 +248,7 @@
       }
 
       .bottom-inner__card {
-        padding: 10px 5px 20px 5px;
+        padding: 1px 5px 1px 5px;
         width: 175px;
       }
 
@@ -230,10 +261,6 @@
         max-width: 70%;
       }
 
-      .company-inner__item {
-        padding: 20px  0 20px 95px;
-      }
-
       .bottom-inner__title {
         margin: 0;
         font-size: 50px;
@@ -243,7 +270,7 @@
       .bottom-inner__card {
         margin-bottom: 15px;
         margin-right: 10px;
-        padding: 5px 5px 15px 5px;
+        padding: 1px 5px 1px 5px;
         width: 150px;
       }
 
@@ -275,7 +302,7 @@
       }
 
       .company-bottom__inner {
-        padding: 0 50px;
+        padding: 0 50px 25px 50px;
       }
 
       .bottom-inner__card {
@@ -298,7 +325,7 @@
       }
 
       .company-bottom__inner {
-        padding: 0;
+        padding: 0 0 25px 0;
       }
  
 
