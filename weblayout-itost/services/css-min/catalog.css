@@ -337,15 +337,6 @@
   box-shadow: 0px 0px 20px #F4F4F4;
 }
 
-.cards__link-box {
-  justify-content: flex-end;
-}
-
-.cards__link {
-  margin-bottom: 40px;
-  color: var(--color-endeavour);
-}
-
 .card-links__icon svg path {
   fill: var(--color-endeavour);
 }
@@ -440,6 +431,10 @@
 
   .bottom-card-btn__box {
     margin-bottom: 30px;
+  }
+
+  .options__container {
+    padding: 0px 15px;
   }
 
 }

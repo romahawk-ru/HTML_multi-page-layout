@@ -309,6 +309,14 @@
         margin-right: 0;
       }
 
+      .company-inner__item {
+        position: relative;
+        padding: 20px 0 20px 0;
+      }
+
+      .company__subtitle-item {
+        margin-left: 75px;
+      }
 
     }
 

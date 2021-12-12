@@ -37,6 +37,7 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#burger').classList.add('is-not-active');
     document.querySelector('#burger-close').classList.add('active');
     document.querySelector('body').classList.add('overflow-hidden');
+    document.querySelector('html').classList.add('overflow-hidden');
 
   });
   document.querySelector('#burger-close').addEventListener('click', function () {
@@ -44,6 +45,7 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#burger').classList.remove('is-not-active');
     document.querySelector('#burger-close').classList.remove('active');
     document.querySelector('body').classList.remove('overflow-hidden');
+    document.querySelector('html').classList.remove('overflow-hidden');
   });
 });
 
@@ -162,26 +164,25 @@ $(document).ready(function(){
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#pop-up__btn').addEventListener('click', function () {
     document.querySelector('#pop-up__top').classList.add('pop-up-active');
-    document.querySelector('body').classList.add('overflow-hidden');
-
   });
   document.querySelector('#pop-up_close').addEventListener('click', function () {
     document.querySelector('#pop-up__top').classList.remove('pop-up-active');
-    document.querySelector('body').classList.remove('overflow-hidden');
   });
 });
 
 
 //поп ап для десктоп версии
 window.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('#pop-up__btn-min').addEventListener('click', function () {
-    document.querySelector('#pop-up__top').classList.add('pop-up-active');
+  document.querySelector('#pop-up__btn-desktop').addEventListener('click', function () {
+    document.querySelector('#pop-up__lesktop').classList.add('pop-up-active');
     document.querySelector('body').classList.add('overflow-hidden');
-
+    document.querySelector('html').classList.add('overflow-hidden');
   });
-  document.querySelector('#pop-up_close').addEventListener('click', function () {
-    document.querySelector('#pop-up__top').classList.remove('pop-up-active');
+  document.querySelector('#pop-up_close-desktop').addEventListener('click', function () {
+    document.querySelector('#pop-up__lesktop').classList.remove('pop-up-active');
     document.querySelector('body').classList.remove('overflow-hidden');
+    document.querySelector('html').classList.remove('overflow-hidden');
+
   });
 });
 

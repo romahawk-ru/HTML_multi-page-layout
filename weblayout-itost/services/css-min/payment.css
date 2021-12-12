@@ -34,3 +34,35 @@
   line-height: 22px;
   color: var(--color-black);
 }
+
+
+@media (max-width: 750px) {
+  
+  .payment__container {
+    padding: 0 50px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  
+  .payment__container {
+    padding: 0 25px;
+  }
+
+}
+
+@media (max-width: 550px) {
+  
+  .payment__container {
+    padding: 0 17px;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+  .hero-min__container {
+    padding: 20px 15px 20px 15px;
+  }
+}
