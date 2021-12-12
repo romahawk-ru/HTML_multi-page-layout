@@ -157,3 +157,32 @@ $(document).ready(function(){
     ]
   });
 });
+
+//реализация поп ап окна для шапки
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('#pop-up__btn').addEventListener('click', function () {
+    document.querySelector('#pop-up__top').classList.add('pop-up-active');
+    document.querySelector('body').classList.add('overflow-hidden');
+
+  });
+  document.querySelector('#pop-up_close').addEventListener('click', function () {
+    document.querySelector('#pop-up__top').classList.remove('pop-up-active');
+    document.querySelector('body').classList.remove('overflow-hidden');
+  });
+});
+
+
+//поп ап для десктоп версии
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('#pop-up__btn-min').addEventListener('click', function () {
+    document.querySelector('#pop-up__top').classList.add('pop-up-active');
+    document.querySelector('body').classList.add('overflow-hidden');
+
+  });
+  document.querySelector('#pop-up_close').addEventListener('click', function () {
+    document.querySelector('#pop-up__top').classList.remove('pop-up-active');
+    document.querySelector('body').classList.remove('overflow-hidden');
+  });
+});
+
+

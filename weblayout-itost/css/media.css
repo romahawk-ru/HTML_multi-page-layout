@@ -329,6 +329,26 @@
     margin-left: 27px;
   }
 
+  /* pop-up menu*/
+
+  .pop-up-active {
+    padding: 60px 15px;
+  }
+
+  .pop-up__btn-close {
+    right: 15px;
+  }
+
+  .pop-up__btn-close svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .pop-up__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
   /* section hero */
 
   .hero {

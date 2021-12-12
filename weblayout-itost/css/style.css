@@ -262,12 +262,6 @@ a {
   transition: color 0.3s ease-in-out;
 }
 
-
-
-/* .list__item:first-child {
-  margin-right: 40px;
-} */
-
 .list__item:nth-child(2) > .header__link {
   margin-right: 30px;
 }
@@ -427,13 +421,6 @@ a {
   background-color: var(--color-white);      
 }
 
-/* .aside-top__fixed {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-
-} */
-
 .header__bottom {
   display: flex;
   align-items: center;
@@ -487,6 +474,115 @@ a {
   background-color: var(--color-white);
   border-color: var(--color-torch-red);
   transition: all 0.3s ease-in-out;
+}
+
+/* pop-up menu */
+
+.pop-up {
+  display: none;
+  opacity: 0;
+  z-index: 10000;
+}
+
+.pop-up-active {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 60px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-white);
+  z-index: 10000;
+  opacity: 1;
+}
+
+.pop-up__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 49px;
+  color: var(--color-endeavour);
+}
+
+.pop-up__text {
+  margin: 0;
+  margin-bottom: 35px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-black);
+}
+
+.pop-up__container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.pop-up__input {
+  margin-bottom: 20px;
+  padding: 15px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150.3%;
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-catskill-white);
+}
+
+.pop-up__input::placeholder {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150.3%;
+  color: var(--color-black);
+}
+
+.pop-up__input-text {
+  margin-bottom: 25px;
+  resize: none;
+}
+
+.pop-up-form__btn {
+  margin-bottom: 15px;
+}
+
+.pop-up-form__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-black);
+}
+
+.pop-up-form__text-mod {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--color-black);
+}
+
+.pop-up__btn-close {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.pop-up__btn-close svg path {
+  transition: fill 0.3s ease-in-out;
+}
+.pop-up__btn-close:hover svg path {
+  fill: var(--color-torch-red);
+  transition: fill 0.3s ease-in-out;
 }
 
 /* section hero */ 
