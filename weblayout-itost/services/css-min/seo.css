@@ -78,23 +78,6 @@
   color: var(--color-black);
 }
 
-.descr-right-top-item__text--icon-after {
-  position: relative;
-}
-
-.descr-right-top-item__text--icon-after::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 148px;
-  width: 15px;
-  height: 15px;
-  background-image: url('/img/descr-right-top-icon-1-1.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 15px 15px;
-}
-
 .descr-right__bottom {
   display: flex;
   align-items: center;

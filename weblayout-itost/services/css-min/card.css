@@ -78,22 +78,6 @@
   color: var(--color-black);
 }
 
-.descr-right-top-item__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.descr-right-top-item__icon {
-  margin-left: 5px;
-  width: 15px;
-  height: 15px;
-}
-
 .descr-right__bottom {
   display: flex;
   align-items: center;
