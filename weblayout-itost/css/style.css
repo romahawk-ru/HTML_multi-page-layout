@@ -482,7 +482,7 @@ a {
 /* pop-up menu */
 
 .pop-up {
-  position: absolute;
+  position: fixed;
   top: -2000px;
   left: 0;
   width: 100%;
@@ -494,6 +494,7 @@ a {
 }
 
 .pop-up-active {
+  position: fixed;
   top: 0;
   transition: all 1s ease-in-out;
 }
