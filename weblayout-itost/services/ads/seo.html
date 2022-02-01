@@ -81,7 +81,7 @@
                 <li class="list__item burger-menu-list__item"><a href="" class="header__link burger-menu__link">Контакты</a></li>
               </ul>
             </nav>
-            <a href="" class="header__bottom-btn burger-menu__btn">Заказать сайт</a>
+            <a href="#" class="header__bottom-btn burger-menu__btn" id="pop-up__btn">Заказать сайт</a>
           </div>
           <div class="link__container">
             <nav class="header__nav">
@@ -149,7 +149,7 @@
                   <li class="bottom__list-item"><a href="" class="list-item__link">Адаптивный веб-дизайн</a></li>
                   <li class="bottom__list-item"><a href="" class="list-item__link">Сопровождение и развитие</a></li>
                 </ul>
-                <button class="header__bottom-btn">Заказать сайт</button>
+                <button class="header__bottom-btn" id="pop-up__btn-desktop">Заказать сайт</button>
               </div>
             </div>
           </aside>
@@ -157,7 +157,72 @@
     </div>        
   </div>
 
+  <div class="pop-up" id="pop-up__top">
+    <div class="pop-up__container">
+      <h2 class="pop-up__title">Заказать сайт</h2>
+      <p class="pop-up__text">Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и подготовят индивидуальное коммерческое предложение.</p>
+      <div class="form-container">
+        <form action="" class="pop-up__form">
+          <input class="pop-up__input" type="text" name="name" placeholder="Ваше имя" id="">
+          <input class="pop-up__input" type="tel" name="phone" placeholder="Ваш номер телефона" id="">
+          <input class="pop-up__input" type="email" name="email" placeholder="Ваш  Email" id="">
+          <textarea class="pop-up__input pop-up__input-text"  name="message" id="" cols="1" rows="4" placeholder="Сообщение"></textarea>
+          <button type="submit" class="form__btn btn pop-up-form__btn">Отправить сообщение</button>
+          <p class="pop-up-form__text">Нажимая на кнопку, я даю согласие на <a href="http://#"><span class="pop-up-form__text-mod">обработку своих персональных данных</span></a></p>
+        </form>
+      </div>
+      <button type="submit" class="pop-up__btn-close" id="pop-up_close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.9426 12.0586L23.7701 1.23102C24.0142 0.986953 24.0142 0.59125 23.7701 0.347187C23.526 0.103125 23.1304 0.103125 22.8862 0.347187L12.0587 11.1747L1.23107 0.347109C0.987011 0.103047 0.591309 0.103047 0.347246 0.347109C0.103105 0.591172 0.103105 0.986875 0.347246 1.23094L11.1747 12.0586L0.347168 22.8862C0.103027 23.1303 0.103027 23.5259 0.347168 23.7701C0.469199 23.8921 0.629121 23.9531 0.789121 23.9531C0.949121 23.9531 1.10904 23.8921 1.23107 23.7701L12.0587 12.9425L22.8862 23.7701C23.0083 23.8921 23.1682 23.9531 23.3282 23.9531C23.4882 23.9531 23.6481 23.8921 23.7701 23.7701C24.0142 23.5259 24.0142 23.1303 23.7701 22.8862L12.9426 12.0586Z" fill="#014EA8"/>
+        </svg>
+      </button>
+    </div>
+  </div>
 
+  <div class="pop-up" id="pop-up__desktop">
+    <div class="pop-up__container">
+      <h2 class="pop-up__title">Заказать сайт</h2>
+      <p class="pop-up__text">Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и подготовят индивидуальное коммерческое предложение.</p>
+      <div class="form-container">
+        <form action="" class="pop-up__form">
+          <input class="pop-up__input" type="text" name="name" placeholder="Ваше имя" id="">
+          <input class="pop-up__input" type="tel" name="phone" placeholder="Ваш номер телефона" id="">
+          <input class="pop-up__input" type="email" name="email" placeholder="Ваш  Email" id="">
+          <textarea class="pop-up__input pop-up__input-text"  name="message" id="" cols="1" rows="4" placeholder="Сообщение"></textarea>
+          <button type="submit" class="form__btn btn pop-up-form__btn">Отправить сообщение</button>
+          <p class="pop-up-form__text">Нажимая на кнопку, я даю согласие на <a href="http://"><span class="pop-up-form__text-mod">обработку своих персональных данных</span></a></p>
+        </form>
+      </div>
+      <button type="submit" class="pop-up__btn-close" id="pop-up_close-desktop">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.9426 12.0586L23.7701 1.23102C24.0142 0.986953 24.0142 0.59125 23.7701 0.347187C23.526 0.103125 23.1304 0.103125 22.8862 0.347187L12.0587 11.1747L1.23107 0.347109C0.987011 0.103047 0.591309 0.103047 0.347246 0.347109C0.103105 0.591172 0.103105 0.986875 0.347246 1.23094L11.1747 12.0586L0.347168 22.8862C0.103027 23.1303 0.103027 23.5259 0.347168 23.7701C0.469199 23.8921 0.629121 23.9531 0.789121 23.9531C0.949121 23.9531 1.10904 23.8921 1.23107 23.7701L12.0587 12.9425L22.8862 23.7701C23.0083 23.8921 23.1682 23.9531 23.3282 23.9531C23.4882 23.9531 23.6481 23.8921 23.7701 23.7701C24.0142 23.5259 24.0142 23.1303 23.7701 22.8862L12.9426 12.0586Z" fill="#014EA8"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- pop up Discuss project -->
+  <div class="pop-up" id="pop-up__discuss">
+    <div class="pop-up__container">
+      <h2 class="pop-up__title">SEO - продвижение</h2>
+      <p class="pop-up__text">Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и подготовят индивидуальное коммерческое предложение.</p>
+      <div class="form-container">
+        <form action="" class="pop-up__form">
+          <input class="pop-up__input" type="text" name="name" placeholder="Ваше имя" id="">
+          <input class="pop-up__input" type="tel" name="phone" placeholder="Ваш номер телефона" id="">
+          <input class="pop-up__input" type="email" name="email" placeholder="Ваш  Email" id="">
+          <textarea class="pop-up__input pop-up__input-text"  name="message" id="" cols="1" rows="4" placeholder="Сообщение"></textarea>
+          <button type="submit" class="form__btn btn pop-up-form__btn">Отправить сообщение</button>
+          <p class="pop-up-form__text">Нажимая на кнопку, я даю согласие на <a href="http://"><span class="pop-up-form__text-mod">обработку своих персональных данных</span></a></p>
+        </form>
+      </div>
+      <button type="submit" class="pop-up__btn-close" id="pop-up_close-discuss">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.9426 12.0586L23.7701 1.23102C24.0142 0.986953 24.0142 0.59125 23.7701 0.347187C23.526 0.103125 23.1304 0.103125 22.8862 0.347187L12.0587 11.1747L1.23107 0.347109C0.987011 0.103047 0.591309 0.103047 0.347246 0.347109C0.103105 0.591172 0.103105 0.986875 0.347246 1.23094L11.1747 12.0586L0.347168 22.8862C0.103027 23.1303 0.103027 23.5259 0.347168 23.7701C0.469199 23.8921 0.629121 23.9531 0.789121 23.9531C0.949121 23.9531 1.10904 23.8921 1.23107 23.7701L12.0587 12.9425L22.8862 23.7701C23.0083 23.8921 23.1682 23.9531 23.3282 23.9531C23.4882 23.9531 23.6481 23.8921 23.7701 23.7701C24.0142 23.5259 24.0142 23.1303 23.7701 22.8862L12.9426 12.0586Z" fill="#014EA8"/>
+        </svg>
+      </button>
+    </div>
+  </div>
 
   <main>
     <section class="hero-min">
@@ -204,7 +269,7 @@
             </div>
           </div>
           <div class="descr-right__bottom">
-            <a href="http://" class="descr-right__btn">Обсудить проект</a>
+            <a href="http://" class="descr-right__btn btn-discuss__active">Обсудить проект</a>
           </div>
         </div>
       </div>
@@ -293,7 +358,7 @@
           </div>
         </div>
         <div class="descr-right__bottom bottom-card-btn__box">
-          <a href="http://" class="descr-right__btn bottom-card__btn--left">Обсудить проект</a>
+          <a href="http://" class="descr-right__btn bottom-card__btn--left btn-discuss__active-two">Обсудить проект</a>
           <a href="http://" class="bottom-card__btn">Заполнить бриф</a>
         </div>
       </div>
@@ -302,7 +367,7 @@
     <section class="contacts">
       <div class="container contacts__container">
         <div class="contacts__inner">
-          <div class="contacts__card element-animation">
+          <div class="contacts__card">
             <h3 class="contacts-card__title">Давайте развивать бизнес вместе.</h3>
             <span class="contacts-card__subtitle">Есть решение для вашего проекта.</span>
             <p class="contacts-card__text">Заполните форму или свяжитесь с нами в соц. сетях или мессенджерах.​ Менеджеры проконсультируют вас по любому вопросу.</p>
@@ -325,14 +390,14 @@
               <span class="card-link__text">work@itost.online</span>
             </a>
           </div>
-          <div class="contacts-card__form element-animation">
+          <div class="contacts-card__form">
             <h2 class="card__form__title">Оставить заявку</h2>
             <form class="card__form" action="тут будет ссылка" autocomplete method="POST">
               <input class="form__input" type="text" placeholder="Ваше имя" name="name">
               <input class="form__input" type="email" placeholder="Viber / Telegram / WhatsApp / Email" name="Email">
               <textarea class="form__input form__input-text" cols="1" rows="4" placeholder="Ваше сообщение" name="message"></textarea>
               <button type="submit" class="form__btn btn">Отправить сообщение</button>
-              <p class="form__text">Нажимая на кнопку, я даю согласие на <span class="form__text-mod">обработку своих персональных данных</span></p>
+              <p class="form__text">Нажимая на кнопку, я даю согласие на <a href="http://"><span class="form__text-mod">обработку своих персональных данных</span></a></p>
             </form>
           </div>
         </div>

@@ -136,6 +136,15 @@
   margin-right: 25px;
 }
 
+.post__link .post-link-text {
+  transition: color 0.3s ease-in-out;
+}
+
+.post__link:hover .post-link-text {
+  color: var(--color-torch-red);
+  transition: color 0.3s ease-in-out;
+}
+
 
 /*адаптивность*/
 

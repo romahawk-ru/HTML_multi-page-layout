@@ -4,6 +4,15 @@
 }
 
 .bottom__list-item:first-child .list-item__link {
+  color: var(--color-black);
+}
+
+.bottom__list-item:first-child .list-item__link:hover {
+  color: var(--color-torch-red);
+  transition: color 0.3s ease-in-out;
+}
+
+.bottom__list-item:nth-child(2) .list-item__link {
   color: var(--color-torch-red);
 }
 

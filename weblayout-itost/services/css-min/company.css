@@ -7,6 +7,11 @@
   color: var(--color-black);
 }
 
+.list__item:nth-child(2) .header__link:hover {
+  color: var(--color-torch-red);
+  transition: color 0.3s ease-in-out;
+}
+
 .cases {
   margin-bottom: 40px;
 }

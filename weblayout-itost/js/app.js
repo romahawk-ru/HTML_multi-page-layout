@@ -1,10 +1,4 @@
-//preloader
-
-
-
-
-//Реализация работы слайдера
-const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper', {    //Реализация работы слайдера
   // Optional parameters
   loop: true,
 
@@ -174,12 +168,12 @@ window.addEventListener('DOMContentLoaded', function() {
 //поп ап для десктоп версии
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#pop-up__btn-desktop').addEventListener('click', function () {
-    document.querySelector('#pop-up__lesktop').classList.add('pop-up-active');
+    document.querySelector('#pop-up__desktop').classList.add('pop-up-active');
     document.querySelector('body').classList.add('overflow-hidden');
     document.querySelector('html').classList.add('overflow-hidden');
   });
   document.querySelector('#pop-up_close-desktop').addEventListener('click', function () {
-    document.querySelector('#pop-up__lesktop').classList.remove('pop-up-active');
+    document.querySelector('#pop-up__desktop').classList.remove('pop-up-active');
     document.querySelector('body').classList.remove('overflow-hidden');
     document.querySelector('html').classList.remove('overflow-hidden');
 
@@ -187,3 +181,46 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 
+//поп ап для запроса десктоп версия
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('#pop-up__btn-request').addEventListener('click', function () {
+    document.querySelector('#pop-up__request').classList.add('pop-up-active');
+    document.querySelector('body').classList.add('overflow-hidden');
+    document.querySelector('html').classList.add('overflow-hidden');
+  });
+  document.querySelector('#pop-up_close-request').addEventListener('click', function () {
+    document.querySelector('#pop-up__request').classList.remove('pop-up-active');
+    document.querySelector('body').classList.remove('overflow-hidden');
+    document.querySelector('html').classList.remove('overflow-hidden');
+
+  });
+});
+
+//поп ап для "обсудить проект" десктоп версия
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.btn-discuss__active').addEventListener('click', function () {
+    document.querySelector('#pop-up__discuss').classList.add('pop-up-active');
+    document.querySelector('body').classList.add('overflow-hidden');
+    document.querySelector('html').classList.add('overflow-hidden');
+  });
+  document.querySelector('#pop-up_close-discuss').addEventListener('click', function () {
+    document.querySelector('#pop-up__discuss').classList.remove('pop-up-active');
+    document.querySelector('body').classList.remove('overflow-hidden');
+    document.querySelector('html').classList.remove('overflow-hidden');
+  });
+});
+
+
+//поп ап для "обсудить проект нижняя часть" десктоп версия
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.btn-discuss__active-two').addEventListener('click', function () {
+    document.querySelector('#pop-up__discuss').classList.add('pop-up-active');
+    document.querySelector('body').classList.add('overflow-hidden');
+    document.querySelector('html').classList.add('overflow-hidden');
+  });
+  document.querySelector('#pop-up_close-discuss').addEventListener('click', function () {
+    document.querySelector('#pop-up__discuss').classList.remove('pop-up-active');
+    document.querySelector('body').classList.remove('overflow-hidden');
+    document.querySelector('html').classList.remove('overflow-hidden');
+  });
+});
