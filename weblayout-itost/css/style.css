@@ -104,7 +104,7 @@ a {
 
 .burger__btn {
   display: none;
-  transition: all 1s ease-in-out;
+  transition: top 1s ease-in-out;
 }
 
 .burger-btn__close {
@@ -121,7 +121,7 @@ a {
   height: 100vh;
   background-color: var(--color-white);
   z-index: 100;
-  transition: all 1s ease-in-out;
+  transition: top 1s ease-in-out;
 }
 
 .is-active {
@@ -216,7 +216,6 @@ a {
   left: 39px;
 }
 
-
 .burger-menu__top-item {
   margin-bottom: 20px;
 }
@@ -228,6 +227,15 @@ a {
 
 .header-social__list {
   display: none;
+}
+
+/* соц иконки попапа */
+.popup-social__list {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .link__container {
@@ -393,13 +401,13 @@ a {
   background-color: var(--color-white);
   border-radius: 0 0 5px 5px;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out;
   z-index: 100;
 }
 
 .header-contacts__box-is-active {
   top: -18px;
-  transition: all 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out;
 }
 
 .header__contacts-border {
@@ -470,14 +478,18 @@ a {
   color: var(--color-white);
   background-color: var(--color-torch-red);
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, 
+  background-color 0.3s ease-in-out,
+  border 0.3s ease-in-out;
 }
 
 .header__bottom-btn:hover {
   color: var(--color-torch-red);
   background-color: var(--color-white);
   border-color: var(--color-torch-red);
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out,
+  background-color 0.3s ease-in-out,
+  border 0.3s ease-in-out;
 }
 
 /* pop-up menu */
@@ -491,13 +503,12 @@ a {
   padding: 60px;
   background-color: var(--color-white);
   z-index: 1000;
-  transition: all 1s ease-in-out;
+  transition: top 1s ease-in-out;
 }
 
 .pop-up-active {
-  position: fixed;
   top: 0;
-  transition: all 1s ease-in-out;
+  transition: top 1s ease-in-out;
 }
 
 .pop-up__title {
@@ -511,7 +522,7 @@ a {
 
 .pop-up__text {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
@@ -644,7 +655,9 @@ a {
   outline: none;
   color: var(--color-midnight-blue);
   background-color: var(--color-white);
-  transition: all 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out,
+  color 0.3s ease-in-out,
+  background-color 0.3s ease-in-out;
 }
 
 .hero-content__btn-left:hover {
@@ -653,7 +666,9 @@ a {
   border: 1px solid var(--color-white);
   color: var(--color-white);
   background-color: transparent;
-  transition: all 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out,
+  color 0.3s ease-in-out,
+  background-color 0.3s ease-in-out;
 }
 
 
@@ -668,7 +683,8 @@ a {
   border-radius: 40px;
   color: var(--color-midnight-blue);
   background-color: var(--color-white);
-  transition: all 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out,
+  background-color 0.3s ease-in-out;
 }
 
 .hero-content-btn-left__hov:hover {
@@ -676,7 +692,8 @@ a {
   border-radius: 40px;
   border: 1px solid var(--color-midnight-blue);
   background-color: transparent;
-  transition: all 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out,
+  background-color 0.3s ease-in-out;
 }
 
 .hero-content__btn-right {
@@ -795,6 +812,9 @@ a {
   padding: 20px 20px 17px 20px;
   width: 500px;
   height: 270px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
   pointer-events: none;
 }
 
@@ -845,7 +865,11 @@ a {
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: all 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out,
+    width 0.3s ease-in-out,
+    left 0.3s ease-in-out,
+    line-heigt 0.3s ease-in-out,
+    font-weight 0.3s ease-in-out;
 }
 
 .card__btn-text {
@@ -855,7 +879,11 @@ a {
   left: 48px;
   font-size: 16px;
   line-height: 20px;
-  transition: all 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out,
+    width 0.3s ease-in-out,
+    left 0.3s ease-in-out,
+    line-heigt 0.3s ease-in-out,
+    font-weight 0.3s ease-in-out;
 }
 
 .cards__icon {
@@ -878,12 +906,12 @@ a {
 }
 
 .cards__btn .card__btn-text {
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .cards__btn:hover .card__btn-text {
   color: var(--color-torch-red);
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .cards__link-box {
@@ -897,7 +925,6 @@ a {
   justify-content: end;
   align-items: center;
   margin-bottom: 45px;
-  padding-right: 5px;
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
@@ -941,7 +968,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .services__card {
@@ -949,20 +976,24 @@ a {
   margin-bottom: 50px;
   padding: 25px;
   width: 500px;
-  height: 180px;
+  min-height: 180px;
   border-radius: 5px;
   border: 1px solid var(--color-concrete);
   background-repeat: no-repeat;
   background-size: 40px 40px;
   background-position: 25px 25px;
-  transition: all 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out, fill 0.3s ease-in-out;
 }
 
 .services-card__top {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
 
+.services-card-top__icon {
+  width: 36px;
+  height: 36px;
 }
 
 .services__card:nth-child(2n) {
@@ -989,8 +1020,7 @@ a {
 }
 
 .services-card__title {
-  margin: 0;
-  margin-left: 20px;
+  margin: 0 0 0 20px;
   font-weight: 300;
   font-size: 25px;
   line-height: 30px;
@@ -999,7 +1029,7 @@ a {
 
 .services-card__text {
   margin: 0;
-  margin-left: 60px;
+  margin-left: 58px;
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
@@ -1220,7 +1250,7 @@ a {
   background-color: transparent;
   color: var(--color-white);
   outline: none;
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .form__input-text {
@@ -1230,27 +1260,27 @@ a {
 
 .form__input::placeholder {
   color: rgba(255, 255, 255, 0.5);
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .form__input:hover {
   border-bottom-color: var(--color-white);
-  transition: all 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
 }
 
 .form__input:hover::-webkit-input-placeholder {
   color: var(--color-white);
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .form__input:hover::-moz-placeholder {
   color: var(--color-white);
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .form__input::-ms-value {
   color: var(--color-white);
-  transition: all 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .form__btn {
@@ -1562,18 +1592,4 @@ a {
   font-size: 12px;
   line-height: 20px;
   color: var(--color-torch-red);
-}
-
-/* стили для анимации*/
-
-.element-animation {
-  /* Скроем элемент в начальном состоянии */
-  opacity: 0;
-  transform: translateY(100%);
-}
-
-.element-animation.element-show {
-  opacity: 1;
-  transition: all 1s;
-  transform: translateY(0%);
 }

@@ -94,9 +94,11 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  border: none;
   border-radius: 5px;
   color: var(--color-white);
   background-color: var(--color-torch-red);
+  cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -336,15 +338,6 @@
 
 .cards__link-box {
   justify-content: flex-end;
-}
-
-.cards__link {
-  margin-bottom: 45px;
-  color: var(--color-endeavour);
-}
-
-.card-links__icon svg path {
-  fill: var(--color-endeavour);
 }
 
 .card-links__icon {

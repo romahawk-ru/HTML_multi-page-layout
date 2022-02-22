@@ -16,18 +16,15 @@
   margin-bottom: 40px;
 }
 
+.cases__cards:nth-child(3),
+.cases__cards:nth-child(4) {
+  margin-bottom: 25px;
+}
+
 .cards__link-box {
   justify-content: flex-end;
 }
 
-.cards__link {
-  margin-bottom: 40px;
-  color: var(--color-endeavour);
-}
-
-.card-links__icon svg path {
-  fill: var(--color-endeavour);
-}
 
 .card-links__icon {
   margin: 0 0 0 10px;
@@ -273,7 +270,7 @@
       }
 
       .bottom-inner__card {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         margin-right: 10px;
         padding: 1px 5px 1px 5px;
         width: 150px;

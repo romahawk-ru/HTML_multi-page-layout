@@ -50,6 +50,15 @@
   background-size: 5px 8px;
 }
 
+/* section services */
+
+.services__card {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px 35px 25px;
+  min-height: 180px;
+}
+
 /* adaptiv */
 
 @media (max-width: 550px) {
@@ -73,10 +82,6 @@
   .services__card:nth-child(4),
   .services__card:nth-child(5) {
     padding: 27px 30px 20px 20px;
-  }
-
-  .services__card:nth-child(4) .services-card__title {
-    margin-bottom: 20px;
   }
 
   .services__card:nth-child(2) .services-card__text {

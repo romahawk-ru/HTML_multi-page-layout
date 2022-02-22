@@ -66,8 +66,6 @@ if (!event.target.matches('.dropbtn')) {
 }
 };
 
-
-
 // анимированное появление элементов при скроле
 
 function onEntry(entry) {
@@ -220,6 +218,20 @@ window.addEventListener('DOMContentLoaded', function() {
   });
   document.querySelector('#pop-up_close-discuss').addEventListener('click', function () {
     document.querySelector('#pop-up__discuss').classList.remove('pop-up-active');
+    document.querySelector('body').classList.remove('overflow-hidden');
+    document.querySelector('html').classList.remove('overflow-hidden');
+  });
+});
+
+//реализация поп ап Оставить отзыв
+window.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('#pop-up__feedback-btn').addEventListener('click', function () {
+    document.querySelector('#pop-up__feedback').classList.add('pop-up-active');
+    document.querySelector('body').classList.add('overflow-hidden');
+    document.querySelector('html').classList.add('overflow-hidden');
+  });
+  document.querySelector('#pop-up_close-feedback').addEventListener('click', function () {
+    document.querySelector('#pop-up__feedback').classList.remove('pop-up-active');
     document.querySelector('body').classList.remove('overflow-hidden');
     document.querySelector('html').classList.remove('overflow-hidden');
   });

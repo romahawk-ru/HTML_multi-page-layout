@@ -210,6 +210,11 @@
     display: none;
   }
 
+  .blog-inner-bottom__title{
+    font-size: 23px;
+    line-height: 30px;
+  }
+
 }
 
 @media (max-width: 375px) {
@@ -217,11 +222,6 @@
   .blog-inner-bottom__text {
     font-size: 14px;
     line-height: 28px;
-  }
-
-  .blog-inner-bottom__title{
-    font-size: 23px;
-    line-height: 30px;
   }
 
 }

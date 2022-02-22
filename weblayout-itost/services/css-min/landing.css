@@ -324,10 +324,6 @@
   box-shadow: 0px 0px 20px #F4F4F4;
 }
 
-.card-links__icon svg path {
-  fill: var(--color-endeavour);
-}
-
 .card-links__icon {
   margin: 0 0 0 10px;
   width: 13px;
