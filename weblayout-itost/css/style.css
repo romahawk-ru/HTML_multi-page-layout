@@ -1072,6 +1072,7 @@ a {
   font-size: 23px;
   line-height: 28px;
   background: linear-gradient(180deg, #FF1536 0%, #BE021D 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
