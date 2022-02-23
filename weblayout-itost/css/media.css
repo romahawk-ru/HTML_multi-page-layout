@@ -345,7 +345,7 @@
   /* pop-up menu*/
 
   .pop-up-active {
-    padding: 60px 15px;
+    padding: 30px 15px;
   }
 
   .pop-up__btn-close {
@@ -571,7 +571,7 @@
   }
 
   .services-card__text {
-    margin: 0;
+    margin: 0 0 15px 0;
     font-weight: 300;
     font-size: 12px;
     line-height: 20px;

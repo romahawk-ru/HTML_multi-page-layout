@@ -500,7 +500,7 @@ a {
   left: 0;
   width: 100%;
   height: 100vh;
-  padding: 60px;
+  padding: 30px 60px 60px 60px;
   background-color: var(--color-white);
   z-index: 1000;
   transition: top 1s ease-in-out;
@@ -512,8 +512,7 @@ a {
 }
 
 .pop-up__title {
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 15px 0;
   font-weight: 300;
   font-size: 40px;
   line-height: 49px;
@@ -521,8 +520,7 @@ a {
 }
 
 .pop-up__text {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 15px 0;
   font-weight: 300;
   font-size: 14px;
   line-height: 22px;
@@ -535,7 +533,7 @@ a {
 }
 
 .pop-up__input {
-  margin-bottom: 20px;
+  margin: 0 0 15px 0;
   padding: 15px 0;
   width: 100%;
   outline: none;
@@ -582,7 +580,7 @@ a {
 
 .pop-up__btn-close {
   position: absolute;
-  top: 60px;
+  top: 30px;
   right: 60px;
   width: 40px;
   height: 40px;
@@ -992,8 +990,8 @@ a {
 }
 
 .services-card-top__icon {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
 }
 
 .services__card:nth-child(2n) {
@@ -1029,7 +1027,7 @@ a {
 
 .services-card__text {
   margin: 0;
-  margin-left: 58px;
+  margin-left: 60px;
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
