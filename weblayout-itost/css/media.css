@@ -845,20 +845,7 @@
     background-size: 200%;
   }
 
-}
-
-@media (max-width: 350px) {
-  .burger-menu__btn {
-    width: 88%;
-  }
-
-  /* burger menu mobile */
-  .burger-menu__top-item {
-    margin-bottom: 10px;
-  }
-
   /* pop-up menu*/
-
   .pop-up-active {
     padding: 15px;
   }
@@ -873,10 +860,6 @@
     line-height: 37px;
   }
 
-  .pop-up__text {
-    font-size: 12px;
-  }
-
   .pop-up__input-text {
     margin-bottom: 10px;
   }
@@ -886,5 +869,31 @@
     height: 45px;
   }
 
+  .pop-up__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .pop-up-form__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .pop-up-form__text-mod {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+}
+
+@media (max-width: 350px) {
+  .burger-menu__btn {
+    width: 88%;
+  }
+
+  /* burger menu mobile */
+  .burger-menu__top-item {
+    margin-bottom: 10px;
+  }
 
 }
