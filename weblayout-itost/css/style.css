@@ -14,6 +14,7 @@
   --color-cerulean: #049be5;
   --color-ceruleanimin: #039be5;
   --color-white: #ffffff;
+  --color-alabaster: #FAFAFA;
   --color-zumthor: #dfe6ff;
   --color-zircon: #f8f9ff;
   --color-midnight-blue: #003470;
@@ -501,7 +502,7 @@ a {
   width: 100%;
   height: 100vh;
   padding: 30px 60px 60px 60px;
-  background-color: var(--color-white);
+  background-color: var(--color-alabaster);
   z-index: 1000;
   transition: top 1s ease-in-out;
 }
