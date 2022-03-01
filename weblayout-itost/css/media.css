@@ -358,8 +358,22 @@
   }
 
   .pop-up__title {
-    font-size: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
     line-height: 37px;
+  }
+
+  .pop-up__input {
+    margin-bottom: 10px;
+    padding: 10px 0;
+  }
+
+  .pop-up__text {
+    margin-bottom: 10px;
+  }
+
+  .pop-up__input-text {
+    margin-bottom: 15px;
   }
 
   /* section hero */
@@ -837,4 +851,40 @@
   .burger-menu__btn {
     width: 88%;
   }
+
+  /* burger menu mobile */
+  .burger-menu__top-item {
+    margin-bottom: 10px;
+  }
+
+  /* pop-up menu*/
+
+  .pop-up-active {
+    padding: 15px;
+  }
+
+  .pop-up__btn-close {
+    top: 15px;
+  }
+  
+  .pop-up__title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 37px;
+  }
+
+  .pop-up__text {
+    font-size: 12px;
+  }
+
+  .pop-up__input-text {
+    margin-bottom: 10px;
+  }
+
+  .form__btn {
+    margin-bottom: 5px;
+    height: 45px;
+  }
+
+
 }
